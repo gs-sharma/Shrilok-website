@@ -185,7 +185,7 @@
 /*-- Portfolio --*/
 
 .portfolio {
-	padding: 100px 0;
+	padding: 0 0;
 }
 
 .portfolio h3 {
@@ -524,6 +524,35 @@
 /*section-5 ambiance ends*/
 
 
+/*Price Card*/
+.price1{
+    padding-left: 9rem !important ;
+    padding-right:  9rem !important;
+}
+.card-image1 {
+    overflow: hidden;
+    max-height: 250px;
+}
+
+.card-body1 {
+    background-color: #DAE4DF;
+}
+
+.card-detail1 {
+    color: #859B8F;
+    border-bottom: 2px dotted #859B8F;
+}
+
+.button1 {
+    background-color: #3b3e47;
+}
+
+.button1 a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Price card ends*/
 /*footer*/
 
 .footer-links{
