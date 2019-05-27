@@ -482,32 +482,23 @@
 
 /*footer*/
 
-.f-button{
-    background-color: dimgrey;
-    color: white;
+.footer-links{
     text-decoration: none;
+    list-style-type: none;
 }
 
-.f-button a {
-    color: white;
+ 
+.footer-nav-link{
     text-decoration: none;
-    font-size: 2rem;
+    color: black;
 }
 
-.f-button a:hover 
-{
-     color:white; 
-     text-decoration:none; 
-     cursor:pointer; 
+.icon-div{
+color: #A3A2A1 ;    
 }
 
-.f-bottom{
-    margin-bottom: 0;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    
+.icon{
+   font-size: 35px;
 }
 
 /* // footer */
