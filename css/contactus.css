@@ -46,3 +46,23 @@
 }
 
 /*navbar ends*/
+/* section-2 start*/
+.contact{
+    padding-left: 180px;
+    padding-right: 180px
+}
+/*section-2 ends*/
+
+
+
+/*section-4 starts*/
+
+.form{
+    background-image: url(../images/nature-1.jpg);
+     background-size: cover;
+}
+.input{
+    background: none;
+    border: solid 2px black; color: gr;
+}
+/*section-4 ends*/
