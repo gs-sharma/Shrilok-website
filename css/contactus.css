@@ -60,6 +60,7 @@
 .form{
     background-image: url(../images/nature-1.jpg);
      background-size: cover;
+    padding-left: 203px;
 }
 .input{
     background: none;
