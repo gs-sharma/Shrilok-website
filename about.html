@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <!--fontawesome cdn	-->
 	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 	
 	<link rel="stylesheet" href="./css/about.css">
 
@@ -81,9 +81,9 @@
     <!--section-3 starts-->
        <div class="section3 row w-100 py-5">
            <div class="col-md-6">
-               <img class="px-5" src="./images/about/about-img.jpg" alt="">
+               <img class="px-5" src="./images/about/about-img.jpg" alt="" style="height: 500px;">
            </div>
-           <div class="col-md-6">
+           <div class="col-md-6 py-5">
                <h2>What do you want to do?</h2>
                <ul style="list-style-type: none">
                    <li><i class='fas fa-angle-right'></i> Spa/gym </li>
@@ -103,14 +103,58 @@
     <!--section-3 ends-->
     
     <!--section-4 starts-->
-       <div class="row">
-           <div class="col-md-6">
-               
+       <div class="row py-5">
+           <div class="col-md-6 px-5">
+              <h2>OUR PACKAGES</h2>
+               <div id="accordion" class="py-5">
+                 <div class="card">
+                   <div class="card-header">
+                      <a class="card-link" data-toggle="collapse" href="#collapseOne"><i class='fas fa-plus'></i> Honeymoon Packages</a>
+        </div>
+        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+          Festival seasons offer a golden opportunity for families to come together. At Misty Mount, we understand the spirit of these festivities. Our culinary experts compete with each other to prepare the best dishes to serve you the real flavor of a festival  so that you remember your stay with the joyous mood at Misty Mount.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo"><i class='fas fa-plus'></i> Company Team Outings</a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree"><i class='fas fa-plus'></i> Weekand gateways</a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+                   </div>
+      <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree"><i class='fas fa-plus'></i> Family Get-together</a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+  
            </div>
-           <div class="col-md-6">
-               <img src="./images/about/about-img2.png" alt="">
+           </div>
+           <div class="col-md-6" style="padding-left: 125px;">
+               <img src="./images/about/about-img2.png" alt="" style="height: 500px;">
            </div>
        </div>
+    
     <!--section-4 ends-->
     
     
@@ -206,11 +250,9 @@
 
 
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-	<script>
-	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </body>
 

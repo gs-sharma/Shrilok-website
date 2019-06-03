@@ -52,3 +52,10 @@
  background-image: url(../images/about/about1.jpg)
 }
 /*section-2 ends*/
+.card-header{
+    background: none;
+    text-decoration: none;
+}
+.card{
+    border: none;
+}
