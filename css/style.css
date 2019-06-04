@@ -1,3 +1,53 @@
+/*headings and genral style + media query*/
+a{
+    text-decoration: none;
+}
+.price-section-heading{
+    font-size: 40px;
+    font-family: font-family: 'Roboto', sans-serif;
+    color: #3B3E47;
+    font-weight: 400;
+}
+
+.price-section-heading span {
+    font-size: 45px;
+    font-weight: 650;
+}
+
+.content-3 h1{
+    font-size: 30px;
+    color: #859B8F;
+    font-family: 'Dancing Script', cursive;
+}
+
+.content-3 p {
+    color: #3B3E47;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
+.content-3 a{
+    font-size: 22px;
+    color: #626570;
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: 1px solid #626570;
+   
+}
+
+.content-3 a:hover{
+    font-size: 24px;
+    color: #626570;
+    font-family: 'Open Sans', sans-serif;
+     transition: 0.4s;    
+     text-decoration: none !important;
+}
+
+/*headings and genral style + media query*/
+
+
+
+
+
 #myCarousel{
     z-index: 1;
    
@@ -63,6 +113,13 @@
 .card-image {
     overflow: hidden;
     max-height: 250px;
+    
+}
+
+.card-heading{
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    color: #626570;
 }
 
 .card-body {
@@ -70,8 +127,12 @@
 }
 
 .card-detail {
+     border-bottom: 2px dotted #859B8F;
+}
+.card-detail p{
     color: #859B8F;
-    border-bottom: 2px dotted #859B8F;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;   
 }
 
 .button {
@@ -100,7 +161,7 @@
 }
 
 .content-3{
-    padding: 10rem 0;
+    padding: 7rem 0;
 }
 
 /*Section-4*/
@@ -109,7 +170,113 @@
     background-color: #3B3E47;
     color: whitesmoke;
 }
+.icon-section-41 .icon-1{
+    display: none;
+}
+.icon-section-41:hover .icon-1-hover{
+    display: none;
+    transition: 0.5s; 
+    
+}
+.icon-section-41:hover h2{
+   color: #626570;
+   transition: 0.5s; 
+}
 
+.icon-section-41:hover .icon-1{
+    display: block;
+    transition: 0.5s; 
+}
+
+.icon-section-42 .icon-1{
+    display: none;
+}
+.icon-section-42:hover .icon-1-hover{
+    display: none;
+    transition: 0.5s; 
+    
+}
+.icon-section-42:hover h2{
+   color: #626570;
+   transition: 0.5s; 
+}
+
+.icon-section-42:hover .icon-1{
+    display: block;
+    transition: 0.5s; 
+}
+
+.icon-section-43 .icon-1{
+    display: none;
+}
+.icon-section-43:hover .icon-1-hover{
+    display: none;
+    transition: 0.5s; 
+    
+}
+.icon-section-43:hover h2{
+   color: #626570;
+   transition: 0.5s; 
+}
+
+.icon-section-43:hover .icon-1{
+    display: block;
+    transition: 0.5s; 
+}
+
+.icon-section-44 .icon-1{
+    display: none;
+}
+.icon-section-44:hover .icon-1-hover{
+    display: none;
+    transition: 0.5s; 
+    
+}
+.icon-section-44:hover h2{
+   color: #626570;
+   transition: 0.5s; 
+}
+
+.icon-section-44:hover .icon-1{
+    display: block;
+    transition: 0.5s; 
+}
+
+.icon-section-45 .icon-1{
+    display: none;
+}
+.icon-section-45:hover .icon-1-hover{
+    display: none;
+    transition: 0.5s; 
+    
+}
+.icon-section-45:hover h2{
+   color: #626570;
+   transition: 0.5s; 
+}
+
+.icon-section-45:hover .icon-1{
+    display: block;
+    transition: 0.5s; 
+}
+
+.icon-section-46 .icon-1{
+    display: none;
+}
+.icon-section-46:hover .icon-1-hover{
+    display: none;
+    transition: 0.5s; 
+    
+}
+.icon-section-46:hover h2{
+   color: #626570;
+   transition: 0.5s; 
+}
+
+.icon-section-46:hover .icon-1{
+    display: block;
+    transition: 0.5s; 
+}
 /*Top Banner Carousel*/
 .c-img{
     min-height: 120vh;
