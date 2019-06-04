@@ -46,24 +46,85 @@
 }
 
 /*navbar ends*/
-/* section-2 start*/
+
+/* contact start*/
 .contact{
-    padding-left: 180px;
-    padding-right: 180px
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 6rem !important;
 }
-/*section-2 ends*/
+/*contact ends*/
 
 
 
 /*section-4 starts*/
 
 .form{
-    background-image: url(../images/nature-1.jpg);
+    background-image: url(../images/contact/contact-bg.jpg);
      background-size: cover;
-    padding-left: 203px;
+    padding-left: 140px;
+    height: 500px;
+}
+.form h4{
+    color: white;
 }
 .input{
     background: none;
-    border: solid 2px black; color: gr;
+    border: solid 2px #7e7e7f;
+    color: #7e7e7f;
+    width: 264px;
+}
+.form textarea{
+    background: none;
+    border: solid 2px #7e7e7f;
+    color: #7e7e7f;
+    width: 540px;
+}
+.form button{
+    background-color: #54675c;
+    border: none;
+    color: honeydew;
+    margin-left: 415px;
+}
+.form button:hover{
+    background-color: #696b72;
 }
 /*section-4 ends*/
+
+
+/*media query*/
+
+@media(max-width: 1407px){
+    .form{
+        text-align: center;
+        padding: 15px 20px 0px 20px;
+     }
+    .input{
+        width: 264px;
+    }
+    .form textarea{
+        height: 150px;
+    }
+}
+
+@media(max-width: 1177px){
+    .input{
+        width: 364px;
+    }
+    .form textarea{
+        width: 364px;
+        height: 100px;
+    }
+    .form button{
+        margin-left: 230px;
+    }
+}
+
+@media(max-width: 838px){
+    .input{
+        width: 264px;
+    }
+    .form textarea{
+        width: 264px;
+    }
+}
