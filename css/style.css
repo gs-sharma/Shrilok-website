@@ -2,6 +2,7 @@
 a{
     text-decoration: none;
 }
+
 .price-section-heading{
     font-size: 40px;
     font-family: font-family: 'Roboto', sans-serif;
@@ -170,6 +171,16 @@ a{
     background-color: #3B3E47;
     color: whitesmoke;
 }
+
+.heading-4{
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content-4{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
 .icon-section-41 .icon-1{
     display: none;
 }
@@ -277,6 +288,9 @@ a{
     display: block;
     transition: 0.5s; 
 }
+
+
+
 /*Top Banner Carousel*/
 .c-img{
     min-height: 120vh;
@@ -356,8 +370,8 @@ a{
 }
 
 .portfolio h3 {
-	text-align: left;
-	margin-bottom: 30px;
+	
+	
 	font-size: 40px;
 	
 }
@@ -516,7 +530,7 @@ a{
 		}
 
 		.tabs-style-bar nav ul li.tab-current a {
-			background: #333;
+			background: #2B2D35;
 			color: #fff;
 		}
 
@@ -677,14 +691,25 @@ a{
     overflow: hidden;
     
 }
-.amb-head{
-    
+.amb-head{   
     margin-left: 8rem;
     margin-right: 8rem;
+}
+.amb-head h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+}
+
+.amb-content{
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #3B3E47;
+    font-size: 18px;
 }
 .side-image{
     max-height: 552px;
     max-width: 636px;
+    min-height: 552px;
+    min-width: 636px;
 }
 
 
@@ -692,13 +717,25 @@ a{
 
 
 /*Price Card*/
+
+.section-heading1{
+    color: #3B3E47;
+    font-size: 34px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.section-sub-heading1{
+  font-family: 'Dancing Script', cursive;
+  color: #859b8f;
+    font-size: 30px;
+}
 .price1{
     padding-left: 9rem !important ;
     padding-right:  9rem !important;
 }
 .card-image1 {
     overflow: hidden;
-    max-height: 250px;
+    max-height: 235px;
 }
 
 .card-body1 {
@@ -707,7 +744,25 @@ a{
 
 .card-detail1 {
     color: #859B8F;
-    border-bottom: 2px dotted #859B8F;
+    border-bottom: 1px dashed #859B8F;
+    font-size: 16px;
+}
+
+.card-detail-x {
+    color: #859B8F;
+    font-size: 20px;
+}
+
+.card-detail-x span{
+    color: #626570;
+    font-size: 22px;
+}
+
+
+.card-heading1{
+    color: #626570;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
 .button1 {
@@ -721,6 +776,17 @@ a{
 
 /*Price card ends*/
 /*footer*/
+.footer-content{
+    
+    font-family: 'Open Sans', sans-serif;
+    color: #959493;
+    font-size: 18px;
+    
+}
+
+.footer-content strong{
+    color: #626570;
+}
 
 .footer-links{
     text-decoration: none;
@@ -730,8 +796,16 @@ a{
  
 .footer-nav-link{
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
+
+.footer-nav-link:hover{
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
 
 .icon-div{
 color: #A3A2A1 ;    

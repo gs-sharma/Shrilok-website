@@ -9,7 +9,8 @@
     <link rel="icon" href="./images/01.ico">
     <title>Shri Lok</title>
     <link rel="stylesheet" href="./css/style.css">
-
+<!--    animate.css-->
+    <link rel="stylesheet" href="./css/animate.css">
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -22,6 +23,40 @@
 
     <!--    fonts-->
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans+Condensed:300|Open+Sans:600|Poppins|Roboto&display=swap" rel="stylesheet">
+    
+    <script>
+    
+    var animateHTML = function() {
+  var elems;
+  var windowHeight;
+  function init() {
+    elems = document.querySelectorAll('.hidden');
+    windowHeight = window.innerHeight;
+    addEventHandlers();
+    checkPosition();
+  }
+  function addEventHandlers() {
+    window.addEventListener('scroll', checkPosition);
+    window.addEventListener('resize', init);
+  }
+  function checkPosition() {
+    for (var i = 0; i < elems.length; i++) {
+      var positionFromTop = elems[i].getBoundingClientRect().top;
+      if (positionFromTop - windowHeight <= 0) {
+        elems[i].className = elems[i].className.replace(
+          'hidden',
+          'fade-in-element'
+        );
+      }
+    }
+  }
+  return {
+    init: init
+  };
+};
+animateHTML().init();
+    
+    </script>
 </head>
 
 <body>
@@ -104,7 +139,7 @@
         <!--    Section-2 cards-->
 
         <!--   Price card-->
-        <div class="price  w-100">
+        <div class="price   w-100">
             <div class="px-5" style="background-color: white; ">
                 <div class="text-center pt-5">
                     <h1 class="price-section-heading">For Bookings Call Us <span>@ 9828381718</span></h1>
@@ -112,7 +147,7 @@
 
                 <div class="row ">
                     <div class="col-md-4">
-                        <div class="price-card my-5">
+                        <div class="price-card animated  my-5">
                             <div class="card-image">
                                 <img src="./images/6.jpeg" alt="">
                             </div>
@@ -144,7 +179,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="price-card my-5">
+                        <div class="price-card animated my-5">
                             <div class="card-image">
                                 <img src="./images/6.jpeg" alt="">
                             </div>
@@ -176,7 +211,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="price-card my-5">
+                        <div class="price-card animated my-5">
                             <div class="card-image">
                                 <img src="./images/6.jpeg" alt="">
                             </div>
@@ -240,23 +275,23 @@
                             <h2 class="heading-4 py-3">BEST FOOD MENU</h2>
                         </div>
                         
-                        <p class="content-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora praesentium quidem quos, voluptas unde, quisquam.</p>
+                        <p class="content-4">We serve Continental, Chinese and Indian cuisines. Not to mention many regional flavors and tastes. A feast for your taste buds!</p>
                     </div>
                     <div class="col-md-4">
                         <div class="icon-section-42">
                             <img class="icon-1" src="./images/assets/ico2.png" alt="">
                             <img class="icon-1-hover" src="./images/assets/ico2-hover.png" alt="">
-                            <h2 class="heading-4 py-3">BEST FOOD MENU</h2>
+                            <h2 class="heading-4 py-3">ENJOY SILENCR IN PRIVACY</h2>
                         </div>
-                        <p class="content-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora praesentium quidem quos, voluptas unde, quisquam.</p>
+                        <p class="content-4">The quietude of the place coupled with our discreet room service would leave you to yourself in toto. You can be as private as possible!</p>
                     </div>
                     <div class="col-md-4">
                        <div class="icon-section-43">
                             <img class="icon-1" src="./images/assets/ico3.png" alt="">
                             <img class="icon-1-hover" src="./images/assets/ico3-hover.png" alt="">
-                            <h2 class="heading-4 py-3">BEST FOOD MENU</h2>
+                            <h2 class="heading-4 py-3">IN THE BEST LOCALE</h2>
                         </div>
-                        <p class="content-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora praesentium quidem quos, voluptas unde, quisquam.</p>
+                        <p class="content-4">The quintessential locales of the SHRILOK is unbelievable. You can reach and enjoy at all the important places, yet come back quickly hassel free.</p>
                     </div>
                 </div>
                 <div class="row py-5">
@@ -264,25 +299,25 @@
                         <div class="icon-section-44">
                             <img class="icon-1" src="./images/assets/ico4.png" alt="">
                             <img class="icon-1-hover" src="./images/assets/ico4-hover.png" alt="">
-                            <h2 class="heading-4 py-3">BEST FOOD MENU</h2>
+                            <h2 class="heading-4 py-3">EASY RESERVATION</h2>
                         </div>
-                        <p class="content-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora praesentium quidem quos, voluptas unde, quisquam.</p>
+                        <p class="content-4">The online reservation is quite simple and straightforward. You decide when you want to come to SHRILOK and book accordingly.</p>
                     </div>
                     <div class="col-md-4">
                         <div class="icon-section-45">
                             <img class="icon-1" src="./images/assets/ico5.png" alt="">
                             <img class="icon-1-hover" src="./images/assets/ico5-hover.png" alt="">
-                            <h2 class="heading-4 py-3">BEST FOOD MENU</h2>
+                            <h2 class="heading-4 py-3">STAFF AT YOUR DISPOSAL</h2>
                         </div>
-                        <p class="content-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora praesentium quidem quos, voluptas unde, quisquam.</p>
+                        <p class="content-4">In SHRILOK, our staff appears mysteriously when you want them. The next moment you won’t find them! That is our room service!</p>
                     </div>
                     <div class="col-md-4">
                         <div class="icon-section-46">
                             <img class="icon-1" src="./images/assets/ico6.png" alt="">
                             <img class="icon-1-hover" src="./images/assets/ico6-hover.png" alt="">
-                            <h2 class="heading-4 py-3">BEST FOOD MENU</h2>
+                            <h2 class="heading-4 py-3">JUST YOU AND HERITAGE</h2>
                         </div>
-                        <p class="content-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora praesentium quidem quos, voluptas unde, quisquam.</p>
+                        <p class="content-4">We know your preparation before arriving at Misty Mount.  We take care and ensure nobody comes in between you and Nature!</p>
                     </div>
                 </div>
 
@@ -298,7 +333,7 @@
                 <div class="content-amb container">
                     <div class="amb-head  px-5 mt-5">
                         <h4>AMENITIES OF SHRILOK</h4>
-                        <p class="w-75 my-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque voluptatem, laboriosam minus odit temporibus quibusdam?</p>
+                        <p class="amb-content  my-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque voluptatem, laboriosam minus odit temporibus quibusdam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, doloremque.</p>
                         <img src="./images/assets/arrow-title3.png" alt="">
                         <div class="mt-5 row amb-thumb">
                             <div class="col-lg-3 col-md-6 col-sm-12 text-center">
@@ -350,8 +385,10 @@
 
         <!--   Price card-->
         <div class="price1 my-5  w-100">
-            <div class="section-heading1 text-center">
-                <h1>OUR PRICING</h1>
+            <div class="text-center">
+                <h1 class="section-heading1">OUR PRICING</h1>
+                <img style="margin-top: -1rem;" src="./images/assets/arrow-title.png" alt="">
+                <h2 class="section-sub-heading1">Glance at our Great Rooms</h2>
             </div>
 
             <div class="row ">
@@ -361,7 +398,7 @@
                             <img src="./images/6.jpeg" alt="">
                         </div>
                         <div class="card-body1 ">
-                            <div class="card-heading1  text-center">
+                            <div class="card-heading1 pt-4 text-center">
                                 <h3>Heading</h3>
                             </div>
 
@@ -375,12 +412,12 @@
                                 <div class="card-detail1  mt-3 text-center">
                                     <h5>1200 sqf</h5>
                                 </div>
-                                <div class="mt-3 text-center" style="color:#859B8F ">
+                                <div class="card-detail-x mt-3 text-center" >
                                     <h5> Split AC</h5>
                                 </div>
 
                                 <div class="mt-4 text-center">
-                                    <h5> Starts from 1200/Night</h5>
+                                    <h5 class="card-detail-x"> Starts from - <span> ₹1500/Night</span></h5>
                                 </div>
 
                             </div>
@@ -396,7 +433,7 @@
                             <img src="./images/6.jpeg" alt="">
                         </div>
                         <div class="card-body1 ">
-                            <div class="card-heading1  text-center">
+                            <div class="card-heading1 pt-4 text-center">
                                 <h3>Heading</h3>
                             </div>
 
@@ -410,12 +447,12 @@
                                 <div class="card-detail1  mt-3 text-center">
                                     <h5>1200 sqf</h5>
                                 </div>
-                                <div class="mt-3 text-center" style="color:#859B8F ">
+                                <div class="card-detail-x mt-3 text-center" >
                                     <h5> Split AC</h5>
                                 </div>
 
                                 <div class="mt-4 text-center">
-                                    <h5> Starts from 1200/Night</h5>
+                                    <h5 class="card-detail-x"> Starts from - <span> ₹1500/Night</span></h5>
                                 </div>
 
                             </div>
@@ -431,7 +468,7 @@
                             <img src="./images/6.jpeg" alt="">
                         </div>
                         <div class="card-body1 ">
-                            <div class="card-heading1  text-center">
+                            <div class="card-heading1 pt-4 text-center">
                                 <h3>Heading</h3>
                             </div>
 
@@ -445,12 +482,12 @@
                                 <div class="card-detail1  mt-3 text-center">
                                     <h5>1200 sqf</h5>
                                 </div>
-                                <div class="mt-3 text-center" style="color:#859B8F ">
+                                <div class="card-detail-x mt-3 text-center" >
                                     <h5> Split AC</h5>
                                 </div>
 
                                 <div class="mt-4 text-center">
-                                    <h5> Starts from 1200/Night</h5>
+                                    <h5 class="card-detail-x"> Starts from - <span> ₹1500/Night</span></h5>
                                 </div>
 
                             </div>
@@ -470,8 +507,10 @@
         <!-- Portfolio -->
         <div style="background-color: #DAE4DF">
             <div class="container py-5">
-                <div class="portfolio pt-3 " id="portfolio">
-                    <h3>Gallery</h3>
+                <div class="portfolio pt-3 text-center" id="portfolio">
+                    <h3 class="card-heading1">Our Gallery</h3>
+                    <img style="margin-top: -1rem;"src="./images/assets/arrow-title3.png" alt="">
+                    <h2 class="section-sub-heading1 mb-4">Glance at our Great Rooms</h2>
 
                     <div class="tabs tabs-style-bar">
                         <nav>
@@ -487,7 +526,7 @@
 
                             <!-- Tab-1 -->
                             <section id="section-bar-1" class="agileits w3layouts">
-                                <h4>FASHION</h4>
+                                <h4>ROOMS</h4>
                                 <div class="gallery-grids row">
                                     <div class="col-md-4 col-sm-4 gallery-top">
                                         <a href="images/fashion-1.jpg" class="swipebox">
@@ -685,7 +724,7 @@
 
                             <!-- Tab-3 -->
                             <section id="section-bar-3" class="agileits w3layouts">
-                                <h4>NATURE</h4>
+                                <h4>POOL</h4>
                                 <div class="gallery-grids row">
                                     <div class="col-md-4 col-sm-4 gallery-top">
                                         <a href="images/nature-1.jpg" class="swipebox">
@@ -784,7 +823,7 @@
 
                             <!-- Tab-4 -->
                             <section id="section-bar-4" class="agileits w3layouts">
-                                <h4>MODELS</h4>
+                                <h4>ALL</h4>
                                 <div class="gallery-grids row">
                                     <div class="col-md-4 col-sm-4 gallery-top">
                                         <a href="images/model-1.jpg" class="swipebox">
@@ -903,56 +942,58 @@
             <div class="mx-5 row pb-4 " style="border-bottom: 1px solid #A3A2A1;">
                 <div class="col-md-3">
 
-                    <div class="text-center mb-2">
-                        <h4>Reach Us</h4>
-                        <img src="./images/assets/arrow-title.png" alt="">
+                    <div class="text-center section-heading1 mb-2">
+                        <h4 class="" >Reach Us</h4>
+                        <img src="./images/assets/arrow-title.png" style="margin-top: -1rem;"alt="">
                     </div>
 
-                    <div class="lead my-3">
-                        <i class="fa fa-map-signs mx-3" aria-hidden="true"></i>
-                        SHRILOK - The Heritage Resort
-                        <br>
-                        <i class="fa fa-map-signs mx-3" aria-hidden="true" style="color: transparent"></i>
+                    <div class="my-3 footer-content">
+                       
+                        <div class="row">
+                           <div class="col-2">
+                                <i class="fa fa-map-signs mx-3" aria-hidden="true"></i>
+                           </div>
+                            <dic class="col-10">
+                                SHRILOK <br>The Heritage Resort, <br>
+                        
                         Near Harni Mahadev Temple ,
-                        <br>
-                        <i class="fa fa-map-signs mx-3" aria-hidden="true" style="color: transparent"></i> Mangrop Road , Bhilwara
+                      
+                        Mangrop Road , Bhilwara
+                            </dic>
+                        </div>
                     </div>
                     <!--                <div class="divider w-50 mx-auto" style="height: 1px ; background-color: darkgray ; opacity: 0.7"></div>-->
-                    <div class="lead my-3">
+                    <div class="  footer-content my-3">
                         <i class="fa fa-phone mx-3" aria-hidden="true"></i>
                         9828381718
                     </div>
 
-                    <div class="lead my-3">
+                    <div class="footer-content my-3">
                         <i class=" mx-3 fa fa-envelope"></i>
                         info.shrilok@gmail.com
                     </div>
-                    <!--
-                <div class="text-center my-2">
-                    <a href="" class="btn btn-dark">
-                        BOOK NOW
-                    </a>
+                 
+
                 </div>
--->
-                </div>
-                <div class="col-md-2 ">
-                    <div class=" py-4 text-center">
-                        <ol class="footer-links">
-                            <li class="py-2"><a class="footer-nav-link" href="">Nav Links</a></li>
-                            <li class="py-2"><a class="footer-nav-link" href="">Nav Links</a></li>
-                            <li class="py-2"><a class="footer-nav-link" href="">Nav Links</a></li>
-                            <li class="py-2"><a class="footer-nav-link" href="">Nav Links</a></li>
-                            <li class="py-2"><a class="footer-nav-link" href="">Nav Links</a></li>
+                <div class="col-md-2  ">
+                    
+                    <div class=" py-5 text-center">
+                        <ol class=" footer-content footer-links">
+                            <li class="py-2"><a class="footer-nav-link" href="">Home</a></li>
+                            <li class="py-2"><a class="footer-nav-link" href="">About Us</a></li>
+                            <li class="py-2"><a class="footer-nav-link" href="">Accomodation</a></li>
+                            <li class="py-2"><a class="footer-nav-link" href="">Gallery</a></li>
+                            <li class="py-2"><a class="footer-nav-link" href="">Contact Us</a></li>
                         </ol>
                     </div>
 
                 </div>
                 <div class="col-md-3">
-                    <div class="text-center mb-2">
+                    <div class=" section-heading1 text-center">
                         <h4>Working Hours</h4>
-                        <img src="./images/assets/arrow-title.png" alt="">
+                        <img src="./images/assets/arrow-title.png" style="margin-top: -1rem;"alt="">
                     </div>
-                    <div class="my-2">
+                    <div class="my-2 footer-content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, dolore?</p>
 
 
@@ -963,10 +1004,10 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="text-center">
+                    <div class=" section-heading1  text-center">
                         <h4>Shri Lok <br> The Heritage Resort</h4>
-                        <img src="./images/assets/arrow-title.png" alt="">
-                        <p class="mt-2">
+                        <img style="margin-top: -1rem;" src="./images/assets/arrow-title.png" alt="">
+                        <p class=" footer-content mt-2">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, veritatis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque mollitia numquam harum, animi consequuntur voluptas!
                         </p>
                         <div class="icon-div">
@@ -1076,6 +1117,8 @@
         });
     </script>
     <!-- //Swipe-Box-JavaScript -->
+    
+ 
 
 
     <!-- Bootstrap core JavaScript -->
