@@ -56,9 +56,7 @@ a{
 
 
 .logo-image {
-    width: 99px;
-    height: 65px;
-   
+    height: 125px;
 }
 
 .parent{
@@ -300,11 +298,11 @@ a{
 }
 
 .banner-text{
-    margin-top: 13rem;
+    margin-top: 8rem;
 }
 
 .main-text{
-    background-color: skyblue;
+    background-color: #36445C;
     color: white;
     font-size: 3rem;
     opacity: 0.75;
@@ -685,7 +683,15 @@ a{
     max-width: 115px;
     max-height: 97px; 
 }
+.amb-image:hover{
+    height: 130px;
+    width: 130px;
+    transition: 0.5s ;
+}
 
+.amb-thumb:hover{
+    overflow: visible;
+}
 .amb-thumb{
    
     overflow: hidden;

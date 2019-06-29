@@ -24,39 +24,7 @@
     <!--    fonts-->
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans+Condensed:300|Open+Sans:600|Poppins|Roboto&display=swap" rel="stylesheet">
     
-    <script>
     
-    var animateHTML = function() {
-  var elems;
-  var windowHeight;
-  function init() {
-    elems = document.querySelectorAll('.hidden');
-    windowHeight = window.innerHeight;
-    addEventHandlers();
-    checkPosition();
-  }
-  function addEventHandlers() {
-    window.addEventListener('scroll', checkPosition);
-    window.addEventListener('resize', init);
-  }
-  function checkPosition() {
-    for (var i = 0; i < elems.length; i++) {
-      var positionFromTop = elems[i].getBoundingClientRect().top;
-      if (positionFromTop - windowHeight <= 0) {
-        elems[i].className = elems[i].className.replace(
-          'hidden',
-          'fade-in-element'
-        );
-      }
-    }
-  }
-  return {
-    init: init
-  };
-};
-animateHTML().init();
-    
-    </script>
 </head>
 
 <body>
@@ -67,15 +35,10 @@ animateHTML().init();
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item item active">
-                    <img class=" c-img d-block  w-100 " src="./images/Screenshot%20(5).png" alt="...">
+                    <img class=" c-img d-block  w-100 " src="./images/exterior/ext14.jpg" alt="...">
                 </div>
-
                 <div class="carousel-item item">
-                    <img class=" c-img d-block  w-100 " src="./images/UmaidBhawan_Exterior_1.jpg" alt="...">
-                </div>
-
-                <div class="carousel-item item">
-                    <img class=" c-img d-block  w-100 " src="./images/Screenshot%20(5).png" alt="...">
+                    <img class=" c-img d-block  w-100 " src="./images/exterior/ext12.jpg" alt="...">
                 </div>
 
             </div>
@@ -95,7 +58,7 @@ animateHTML().init();
         <!--    Navbar -->
         <div class="parent">
             <div class="w-100 text-center">
-                <img class="  mx-auto mt-5 mb-2 logo-image" src="./images/logo/logo.png" alt="">
+                <img class="  mx-auto mt-5 mb-2 logo-image" src="./images/logo/01.png" alt="">
 
                 <div class="container .d-sm-none  ">
                     <nav class="navbar navbar-expand-md text-center">
@@ -128,8 +91,8 @@ animateHTML().init();
             </div>
 
             <div class="banner-text text-center">
-                <div class="main-text d-inline mx-auto px-3 my-3"> Welcome to Shri Lok</div> <br>
-                <div class="sub-text d-inline mx-auto px-3  "> Welcome to Shri Lok</div>
+<!--                <div class="main-text d-inline mx-auto px-4 py-1"> A Welcome Treat in Heritage</div> <br> <br>-->
+<!--                <div class="sub-text d-inline mx-auto px-4 py-1 "> Comes a fine Resort to serve its Name</div>-->
             </div>
 
 
@@ -141,7 +104,7 @@ animateHTML().init();
         <!--   Price card-->
         <div class="price   w-100">
             <div class="px-5" style="background-color: white; ">
-                <div class="text-center pt-5">
+                <div class="text-center pt-4">
                     <h1 class="price-section-heading">For Bookings Call Us <span>@ 9828381718</span></h1>
                 </div>
 
@@ -149,11 +112,11 @@ animateHTML().init();
                     <div class="col-md-4">
                         <div class="price-card animated  my-5">
                             <div class="card-image">
-                                <img src="./images/6.jpeg" alt="">
+                                <img src="./images/room/room1.jpg" alt="">
                             </div>
                             <div class="card-body ">
                                 <div class="card-heading  text-center">
-                                    <h3>Heading</h3>
+                                    <h3>Rooms</h3>
                                 </div>
 
                                 <div class="">
@@ -181,11 +144,11 @@ animateHTML().init();
                     <div class="col-md-4">
                         <div class="price-card animated my-5">
                             <div class="card-image">
-                                <img src="./images/6.jpeg" alt="">
+                                <img src="images/h1.jpg" alt="">
                             </div>
                             <div class="card-body ">
                                 <div class="card-heading  text-center">
-                                    <h3>Heading</h3>
+                                    <h3>Banquet Hall</h3>
                                 </div>
 
                                 <div class="">
@@ -213,11 +176,11 @@ animateHTML().init();
                     <div class="col-md-4">
                         <div class="price-card animated my-5">
                             <div class="card-image">
-                                <img src="./images/6.jpeg" alt="">
+                                <img src="./images/r1.jpg" alt="">
                             </div>
                             <div class="card-body ">
                                 <div class="card-heading  text-center">
-                                    <h3>Heading</h3>
+                                    <h3>Resort</h3>
                                 </div>
 
                                 <div class="">
@@ -337,26 +300,19 @@ animateHTML().init();
                         <img src="./images/assets/arrow-title3.png" alt="">
                         <div class="mt-5 row amb-thumb">
                             <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                                <button onclick="myFunction1()">
-                                    <img class="amb-image" src="./images/logo/01.png" alt="">
-                                </button>
+                                    <img onclick="myFunction1()" class="amb-image" src="./images/am1.jpg" alt="">
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                                <button onclick="myFunction2()">
-                                    <img class="amb-image" src="./images/logo/01.png" alt="">
-                                </button>
+                                    <img onclick="myFunction2()" class="amb-image" src="./images/am3.jpg" alt="">
+                              </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                                    <img  onclick="myFunction3()" class="amb-image" src="./images/am4.jpg" alt=""> 
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                                <button onclick="myFunction3()">
-                                    <img class="amb-image" src="./images/logo/01.png" alt="">
-                                </button>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                                <button onclick="myFunction4()">
-                                    <img class="amb-image" src="./images/logo/01.png" alt="">
-                                </button>
-                            </div>
+                                    <img onclick="myFunction4()" class="amb-image" src="./images/am5.jpg" alt="">
+                           </div>
                         </div>
+                        
                     </div>
 
                 </div>
@@ -364,16 +320,16 @@ animateHTML().init();
             </div>
             <div class="col-md-5" style="display: block;">
                 <div id="img1">
-                    <img class="side-image" src="./images/UmaidBhawan_Exterior_1.jpg" alt="">
+                    <img class="side-image" src="./images/exterior/ext1.jpeg" alt="">
                 </div>
                 <div id="img2" style="display: none;">
-                    <img class="side-image" src="./images/Screenshot%20(5).png" alt="">
+                    <img class="side-image" src="./images/pool/p1.jpg" alt="">
                 </div>
                 <div id="img3" style="display: none;">
-                    <img class="side-image" src="./images/assets/snow-hills.png" alt="">
+                    <img class="side-image" src="./images/interior/img2.jpg" alt="">
                 </div>
                 <div id="img4" style="display: none;">
-                    <img class="side-image" src="./images/Screenshot%20(3).png" alt="">
+                    <img class="side-image" src="./images/interior/img5.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -395,11 +351,11 @@ animateHTML().init();
                 <div class="col-md-4">
                     <div class="price-card1 my-5">
                         <div class="card-image1">
-                            <img src="./images/6.jpeg" alt="">
+                            <img src="./images/room/room1.jpg" alt="">
                         </div>
                         <div class="card-body1 ">
                             <div class="card-heading1 pt-4 text-center">
-                                <h3>Heading</h3>
+                                <h3>Maharaja Suite</h3>
                             </div>
 
                             <div class="mx-5">
@@ -430,11 +386,11 @@ animateHTML().init();
                 <div class="col-md-4">
                     <div class="price-card1 my-5">
                         <div class="card-image1">
-                            <img src="./images/6.jpeg" alt="">
+                            <img src="./images/room/room2.jpg" alt="">
                         </div>
                         <div class="card-body1 ">
                             <div class="card-heading1 pt-4 text-center">
-                                <h3>Heading</h3>
+                                <h3>Family Suite</h3>
                             </div>
 
                             <div class="mx-5">
@@ -465,11 +421,11 @@ animateHTML().init();
                 <div class="col-md-4">
                     <div class="price-card1 my-5">
                         <div class="card-image1">
-                            <img src="./images/6.jpeg" alt="">
+                            <img src="./images/room/room3.jpg" alt="">
                         </div>
                         <div class="card-body1 ">
                             <div class="card-heading1 pt-4 text-center">
-                                <h3>Heading</h3>
+                                <h3>Super Deluxe</h3>
                             </div>
 
                             <div class="mx-5">
@@ -505,12 +461,12 @@ animateHTML().init();
         <!--        our price ends-->
 
         <!-- Portfolio -->
-        <div style="background-color: #DAE4DF">
+        <div >
             <div class="container py-5">
                 <div class="portfolio pt-3 text-center" id="portfolio">
                     <h3 class="card-heading1">Our Gallery</h3>
                     <img style="margin-top: -1rem;"src="./images/assets/arrow-title3.png" alt="">
-                    <h2 class="section-sub-heading1 mb-4">Glance at our Great Rooms</h2>
+                    <h2 class="section-sub-heading1 mb-4">Glance at our Great Resort</h2>
 
                     <div class="tabs tabs-style-bar">
                         <nav>
@@ -529,91 +485,91 @@ animateHTML().init();
                                 <h4>ROOMS</h4>
                                 <div class="gallery-grids row">
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/fashion-1.jpg" class="swipebox">
+                                        <a href="images/room/suite/img1.jpg" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/fashion-1.jpg" alt="" class="img-responsive">
+                                                <img src="images/room/suite/img1.jpg" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Suite Room</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/fashion-2.jpg" class="swipebox">
+                                        <a href="images/room/suite/img2.jpg" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/fashion-2.jpg" alt="" class="img-responsive">
+                                                <img src="images/room/suite/img2.jpg" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Suite Room</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/fashion-3.jpg" class="swipebox">
+                                        <a href="images/room/family-room/img1.jpg" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/fashion-3.jpg" alt="" class="img-responsive">
+                                                <img src="images/room/family-room/img1.jpg" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Family Room</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/fashion-4.jpg" class="swipebox">
+                                        <a href="images/room/super-delux/img2.jpg" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/fashion-4.jpg" alt="" class="img-responsive">
+                                                <img src="images/room/super-delux/img2.jpg" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Super Deluxe</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/fashion-5.jpg" class="swipebox">
+                                        <a href="iimages/room/super-delux/img4.jpg" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/fashion-5.jpg" alt="" class="img-responsive">
+                                                <img src="images/room/super-delux/img4.jpg" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Super Deluxe</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/fashion-6.jpg" class="swipebox">
+                                        <a href="images/room/super-delux/img4.jpg" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/fashion-6.jpg" alt="" class="img-responsive">
+                                                <img src="images/room/super-delux/img4.jpg" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Super Deluxe</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/fashion-7.jpg" class="swipebox">
+                                        <a href="images/room/delux/img3.jpg" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/fashion-7.jpg" alt="" class="img-responsive">
+                                                <img src="images/room/delux/img3.jpg" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Deluxe</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/fashion-8.jpg" class="swipebox">
+                                        <a href="images/room/delux/img1.jpg" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/fashion-8.jpg" alt="" class="img-responsive">
+                                                <img src="images/room/delux/img1.jpg" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Deluxe</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/fashion-9.jpg" class="swipebox">
+                                        <a href="images/room/suite/img5.jpg" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/fashion-9.jpg" alt="" class="img-responsive">
+                                                <img src="images/room/suite/img5.jpg" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Suite Bathroom</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
@@ -628,95 +584,67 @@ animateHTML().init();
                                 <h4>EVENTS</h4>
                                 <div class="gallery-grids row">
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/event-1.jpg" class="swipebox">
+                                        <a href="images/events/e1.JPG" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/event-1.jpg" alt="" class="img-responsive">
+                                                <img src="images/events/e1.JPG" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Marriage Function</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/event-2.jpg" class="swipebox">
+                                        <a href="images/events/e6.JPG" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/event-2.jpg" alt="" class="img-responsive">
+                                                <img src="images/events/e6.JPG" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Marriage Function</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/event-3.jpg" class="swipebox">
+                                        <a href="images/events/e5.jpg" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/event-3.jpg" alt="" class="img-responsive">
+                                                <img src="images/events/e5.jpg" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Marriage Function</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/event-4.jpg" class="swipebox">
+                                        <a href="images/events/e15.jpeg" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/event-4.jpg" alt="" class="img-responsive">
+                                                <img src="images/events/e15.jpeg" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Marriage Function</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/event-5.jpg" class="swipebox">
+                                        <a href="images/events/e17.jpeg" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/event-5.jpg" alt="" class="img-responsive">
+                                                <img src="images/events/e17.jpeg" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Event</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/event-6.jpg" class="swipebox">
+                                        <a href="images/events/e13.jpeg" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/event-6.jpg" alt="" class="img-responsive">
+                                                <img src="images/events/e13.jpeg" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Banquet Hall</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
                                     </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/event-7.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/event-7.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Photography</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/event-8.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/event-8.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Photography</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/event-9.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/event-9.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Photography</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
+                                    
+                                   
                                     <div class="clearfix"></div>
                                 </div>
                             </section>
@@ -727,95 +655,66 @@ animateHTML().init();
                                 <h4>POOL</h4>
                                 <div class="gallery-grids row">
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/nature-1.jpg" class="swipebox">
+                                        <a href="images/pool/p1.jpg" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/nature-1.jpg" alt="" class="img-responsive">
+                                                <img src="images/pool/p1.jpg" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Pool Area</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/nature-2.jpg" class="swipebox">
+                                        <a href="images/pool/p2.jpg" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/nature-2.jpg" alt="" class="img-responsive">
+                                                <img src="images/pool/p2.jpg" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Pool Area</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/nature-3.jpg" class="swipebox">
+                                        <a href="images/pool/p3.jpg" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/nature-3.jpg" alt="" class="img-responsive">
+                                                <img src="images/pool/p3.jpg" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Pool Area</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/nature-4.jpg" class="swipebox">
+                                        <a href="images/pool/p4.jpg" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/nature-4.jpg" alt="" class="img-responsive">
+                                                <img src="images/pool/p4.jpg" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Pool Area</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/nature-5.jpg" class="swipebox">
+                                        <a href="images/pool/e2.JPG" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/nature-5.jpg" alt="" class="img-responsive">
+                                                <img src="images/pool/e2.JPG" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Pool Party</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/nature-6.jpg" class="swipebox">
+                                        <a href="images/pool/p5.jpeg" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/nature-6.jpg" alt="" class="img-responsive">
+                                                <img src="images/pool/p5.jpeg" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Pool</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
                                     </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/nature-7.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/nature-7.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Photography</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/nature-8.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/nature-8.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Photography</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/nature-9.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/nature-9.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Photography</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
+                                    
                                     <div class="clearfix"></div>
                                 </div>
                             </section>
@@ -823,98 +722,79 @@ animateHTML().init();
 
                             <!-- Tab-4 -->
                             <section id="section-bar-4" class="agileits w3layouts">
-                                <h4>ALL</h4>
+                                <h4>Others</h4>
                                 <div class="gallery-grids row">
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/model-1.jpg" class="swipebox">
+                                        <a href="images/restraunt/r1.jpg" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/model-1.jpg" alt="" class="img-responsive">
+                                                <img src="images/restraunt/r1.jpg" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Restarant</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/model-2.jpg" class="swipebox">
+                                        <a href="images/restraunt/r2.jpg" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/model-2.jpg" alt="" class="img-responsive">
+                                                <img src="images/restraunt/r2.jpg" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Restarant</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/model-3.jpg" class="swipebox">
+                                        <a href="images/hall/h1.jpg" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/model-3.jpg" alt="" class="img-responsive">
+                                                <img src="images/hall/h1.jpg" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Banquet Hall</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/model-4.jpg" class="swipebox">
+                                        <a href="images/hall/h2.jpg" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/model-4.jpg" alt="" class="img-responsive">
+                                                <img src="images/hall/h2.jpg" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Banquet Hall</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/model-5.jpg" class="swipebox">
+                                        <a href="images/interior/img5.jpg" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/model-5.jpg" alt="" class="img-responsive">
+                                                <img src="images/interior/img5.jpg" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Common Area</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/model-6.jpg" class="swipebox">
+                                        <a href="images/interior/img1.jpg" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/model-6.jpg" alt="" class="img-responsive">
+                                                <img src="images/interior/img1.jpg" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Common Area</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
                                     </div>
                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/model-7.jpg" class="swipebox">
+                                        <a href="images/interior/img2.jpg" class="swipebox">
                                             <figure class="effect-bubba">
-                                                <img src="images/model-7.jpg" alt="" class="img-responsive">
+                                                <img src="images/interior/img2.jpg" alt="" class="img-responsive">
                                                 <figcaption>
-                                                    <h4>Photography</h4>
+                                                    <h4>Reception</h4>
                                                 </figcaption>
                                             </figure>
                                         </a>
                                     </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/model-8.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/model-8.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Photography</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/model-9.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/model-9.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Photography</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
+                                   
                                     <div class="clearfix"></div>
                                 </div>
                             </section>
