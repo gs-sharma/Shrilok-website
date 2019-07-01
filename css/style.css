@@ -72,12 +72,12 @@ a{
 
 .nav-link{
     color: #3B3E47;
-    font-size: 0.9rem;
-    font-family: 'Julius Sans One', sans-serif;
+    font-size: 25px;
+    font-family: 'Playfair Display SC', serif;
     padding-left: 30px !important;
     padding-right: 30px !important;
-    margin-top: 15px;
-    font-weight: bold;
+    margin-top: 16px;
+    
 }
 
 .nav-link:hover{
@@ -96,6 +96,11 @@ a{
     padding-right: 3rem !important;
     
    
+}
+
+.price-section-heading{
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
 }
 
 @media(min-width:1440px){
@@ -117,8 +122,8 @@ a{
 
 .card-heading{
     font-family: 'Roboto', sans-serif;
-    font-size: 26px;
-    color: #626570;
+    font-size: 30px;
+    color: black;
 }
 
 .card-body {
@@ -129,9 +134,9 @@ a{
      border-bottom: 2px dotted #859B8F;
 }
 .card-detail p{
-    color: #859B8F;
+    color: #626570;
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;   
+    font-size: 18px;   
 }
 
 .button {
@@ -141,6 +146,7 @@ a{
 .button a {
     color: white;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*Price card ends*/
@@ -370,8 +376,8 @@ a{
 .portfolio h3 {
 	
 	
-	font-size: 40px;
-	
+	font-size: 35px;
+	color: #3B3E47;
 }
 
 	/*-- Tabs --*/
@@ -675,7 +681,7 @@ a{
 
 .amb{
     
-    margin-top: 9rem;
+    margin-top: 8rem;
     margin-bottom: 7rem;
 }
 
@@ -703,12 +709,13 @@ a{
 }
 .amb-head h4{
     font-family: 'Roboto', sans-serif;
-    font-size: 32px;
+    font-size: 35px;
+    color: #3B3E47;
 }
 
 .amb-content{
-    font-family: 'Open Sans Condensed', sans-serif;
-    color: #3B3E47;
+    font-family: 'Open Sans', sans-serif;
+    color: #626570;
     font-size: 18px;
 }
 .side-image{
@@ -726,7 +733,7 @@ a{
 
 .section-heading1{
     color: #3B3E47;
-    font-size: 34px;
+    font-size: 35px;
     font-family: 'Roboto', sans-serif;
     
 }
@@ -749,24 +756,27 @@ a{
 }
 
 .card-detail1 {
-    color: #859B8F;
+    color: #626570;;
     border-bottom: 1px dashed #859B8F;
-    font-size: 16px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .card-detail-x {
-    color: #859B8F;
-    font-size: 20px;
+    color: #626570;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .card-detail-x span{
     color: #626570;
-    font-size: 22px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
 .card-heading1{
-    color: #626570;
+    color: black;
     font-family: 'Roboto', sans-serif;
     
 }
@@ -778,6 +788,7 @@ a{
 .button1 a {
     color: white;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*Price card ends*/
