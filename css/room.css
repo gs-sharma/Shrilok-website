@@ -18,6 +18,10 @@
     margin-top: 8rem;
 
 }
+.banner-heading h{
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 50px;
+}
 
 /*Banner ends*/
 
@@ -28,12 +32,12 @@
 
 .nav-link {
     color: #3B3E47;
-    font-size: 0.9rem;
-    font-family: 'Julius Sans One', sans-serif;
+    font-size: 25px;
+    font-family: 'Playfair Display SC', serif;
     padding-left: 30px !important;
     padding-right: 30px !important;
     margin-top: 0px;
-    font-weight: bold;
+    font-weight: ;
 }
 
 .nav-link:hover {
