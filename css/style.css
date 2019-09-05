@@ -132,6 +132,7 @@ a{
 
 .card-detail {
      border-bottom: 2px dotted #859B8F;
+    height: 220px;
 }
 .card-detail p{
     color: #626570;
@@ -681,8 +682,8 @@ a{
 
 .amb{
     
-    margin-top: 8rem;
-    margin-bottom: 7rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .amb-image{
