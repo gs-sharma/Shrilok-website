@@ -1,3 +1,9 @@
+.insta-feed{
+    max-height:345px; 
+    overflow-y: scroll;
+}
+
+
 /*headings and genral style + media query*/
 a{
     text-decoration: none;

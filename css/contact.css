@@ -1,3 +1,8 @@
+.insta-feed{
+    max-height:345px; 
+    overflow-y: scroll;
+}
+
 /*-- Portfolio --*/
 
 .portfolio {
