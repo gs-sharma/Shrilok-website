@@ -3,7 +3,9 @@
     overflow-y: scroll;
 }
 
-
+.modal-backdrop {
+  z-index: -1 !important; 
+}
 /*headings and genral style + media query*/
 a{
     text-decoration: none;

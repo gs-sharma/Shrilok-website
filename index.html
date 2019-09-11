@@ -9,7 +9,7 @@
     <link rel="icon" href="./images/01.ico">
     <title>Shri Lok</title>
     <link rel="stylesheet" href="./css/style.css">
-<!--    animate.css-->
+    <!--    animate.css-->
     <link rel="stylesheet" href="./css/animate.css">
 
     <!-- Bootstrap core CSS -->
@@ -23,9 +23,12 @@
 
     <!--    fonts-->
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans+Condensed:300|Open+Sans:600|Poppins|Roboto&display=swap" rel="stylesheet">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:700|Playfair+Display+SC&display=swap" rel="stylesheet">
     
+    <script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+
 </head>
 
 <body>
@@ -92,7 +95,7 @@
             </div>
 
             <div class="banner-text text-center">
-<!--
+                <!--
                 <div class="main-text d-inline mx-auto px-4 py-1"> A Welcome Treat in Heritage</div> <br> <br>
                 <div class="sub-text d-inline mx-auto px-4 py-1 "> Comes a fine Resort to serve its Name</div>
 -->
@@ -131,8 +134,10 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
+                                       
                                         <div class="button text-center mt-3">
-                                            <a class="d-block py-3" href="">Book Now</a>
+                                            <a class="d-block py-3" href="./room.html" >Book Now</a>
+                                           
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -163,8 +168,89 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div class="button text-center mt-3">
-                                            <a class="d-block py-3" href="">Book Now</a>
+                                         <div class="button text-center mt-3">
+                                            <a class="d-block py-3" href="#" data-toggle="modal" data-target="#exampleModalCenter">Book Now</a>
+                                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLongTitle">Booking Form</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            
+                                                            <p class="lead">Our Online Booking servers are not working currently, fill this form and we will contact you as soon as possible</p>
+
+                                                            <form class="text-left gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbz-XVALmnF3zkW07GhzNmGSxZ_LBKt9mKwhYM0XfQ/exec">
+                                                                <!-- change the form action to your script url -->
+
+                                                                <div class="form-elements">
+                                                                    <fieldset class="pure-group">
+                                                                       
+                                                                        <label for="name">Name: </label>
+                                                                        <input id="name" name="name" placeholder="What your Mom calls you" />
+                                                                    </fieldset>
+
+
+                                                                    <fieldset class="pure-group">
+                                                                        <label for="email"><em>Your</em> Email Address:</label>
+                                                                        <input id="email" name="email" type="email" value="" required placeholder="your.name@email.com" />
+                                                                    </fieldset>
+                                                                    
+                                                                    <fieldset class="pure-group">
+                                                                        <label for="contact"><em>Your</em> Contact Number:</label>
+                                                                        
+                                                                         <input id="contact" name="contact" type="tel" name="phone" pattern="[4-9]{1}[0-9]{4}[0-9]{5}" required placeholder="1234567890">
+                                                                        
+                                                                    </fieldset>
+
+                                                                    <fieldset class="pure-group">
+                                                                        <label for="From">From</label>
+                                                                        
+                                                                        <input required type="date" name="from" id="from">
+                                                                    </fieldset>
+                                                                    
+                                                                      <fieldset class="pure-group">
+                                                                        <label for="to">to</label>
+                                                                        
+                                                                        <input required type="date" name="to" id="to">
+                                                                    </fieldset>
+                                                                    
+                                                                     <fieldset class="pure-group">
+                                                                        <label for="description">Description</label>
+                                                                        
+                                                                        <textarea name="description" id="description" cols="30" rows="5" placeholder="It will be benificial for us if you can provide us some information about the type of event you want to organise. It is Optional"></textarea>
+                                                                    </fieldset>
+                                                                    
+                                                                    
+
+                                                                    <fieldset class="d-none pure-group honeypot-field">
+                                                                        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+                                                                        <input id="honeypot" type="text" name="honeypot" value="" />
+                                                                    </fieldset>
+                                                                    <button class="button-success pure-button button-xlarge">
+                                                                        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+
+
+                                                                </div>
+                                                                
+
+                                                                <!-- Customise the Thankyou Message People See when they submit the form: -->
+                                                                <div class="thankyou_message" style="display:none;">
+                                                                    <h2><em>Thanks</em> for contacting us!
+                                                                        We will get back to you soon!</h2>
+                                                                </div>
+
+                                                            </form>
+
+
+                                                        </div>
+                                                      
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -195,8 +281,89 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div class="button text-center mt-3">
-                                            <a class="d-block py-3" href="">Book Now</a>
+                                         <div class="button text-center mt-3">
+                                            <a class="d-block py-3" href="#" data-toggle="modal" data-target="#exampleModalCenter">Book Now</a>
+                                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLongTitle">Booking Form</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            
+                                                            <p class="lead">Our Online Booking servers are not working currently, fill this form and we will contact you as soon as possible</p>
+
+                                                            <form class="text-left gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbz-XVALmnF3zkW07GhzNmGSxZ_LBKt9mKwhYM0XfQ/exec">
+                                                                <!-- change the form action to your script url -->
+
+                                                                <div class="form-elements">
+                                                                    <fieldset class="pure-group">
+                                                                       
+                                                                        <label for="name">Name: </label>
+                                                                        <input id="name" name="name" placeholder="What your Mom calls you" />
+                                                                    </fieldset>
+
+
+                                                                    <fieldset class="pure-group">
+                                                                        <label for="email"><em>Your</em> Email Address:</label>
+                                                                        <input id="email" name="email" type="email" value="" required placeholder="your.name@email.com" />
+                                                                    </fieldset>
+                                                                    
+                                                                    <fieldset class="pure-group">
+                                                                        <label for="contact"><em>Your</em> Contact Number:</label>
+                                                                        
+                                                                         <input id="contact" name="contact" type="tel" name="phone" pattern="[4-9]{1}[0-9]{4}[0-9]{5}" required placeholder="1234567890">
+                                                                        
+                                                                    </fieldset>
+
+                                                                    <fieldset class="pure-group">
+                                                                        <label for="From">From</label>
+                                                                        
+                                                                        <input required type="date" name="from" id="from">
+                                                                    </fieldset>
+                                                                    
+                                                                      <fieldset class="pure-group">
+                                                                        <label for="to">to</label>
+                                                                        
+                                                                        <input required type="date" name="to" id="to">
+                                                                    </fieldset>
+                                                                    
+                                                                     <fieldset class="pure-group">
+                                                                        <label for="description">Description</label>
+                                                                        
+                                                                        <textarea name="description" id="description" cols="30" rows="5" placeholder="It will be benificial for us if you can provide us some information about the type of event you want to organise. It is Optional"></textarea>
+                                                                    </fieldset>
+                                                                    
+                                                                    
+
+                                                                    <fieldset class="d-none pure-group honeypot-field">
+                                                                        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+                                                                        <input id="honeypot" type="text" name="honeypot" value="" />
+                                                                    </fieldset>
+                                                                    <button class="button-success pure-button button-xlarge">
+                                                                        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+
+
+                                                                </div>
+                                                                
+
+                                                                <!-- Customise the Thankyou Message People See when they submit the form: -->
+                                                                <div class="thankyou_message" style="display:none;">
+                                                                    <h2><em>Thanks</em> for contacting us!
+                                                                        We will get back to you soon!</h2>
+                                                                </div>
+
+                                                            </form>
+
+
+                                                        </div>
+                                                      
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -208,9 +375,18 @@
                             </div>
                         </div>
                     </div>
+
+
+
+
                 </div>
+
+
             </div>
         </div>
+
+
+
         <!--price card-->
 
         <!--    Section-2 cards ends-->
@@ -224,7 +400,7 @@
                 <p class="pb-5">With the everlasting beauty that stood for many years comes a fine
                     resort to serve its name</p>
 
-                <a class="pb-1" href="">I WANT TO PLAN MY HOLIDAY HERE</a>
+                <a class="pb-1" href="./room.html">I WANT TO PLAN MY HOLIDAY HERE</a>
             </div>
 
         </div>
@@ -240,7 +416,7 @@
                             <img class="icon-1-hover" src="./images/assets/ico1-hover.png" alt="">
                             <h2 class="heading-4 py-3">BEST FOOD MENU</h2>
                         </div>
-                        
+
                         <p class="content-4">We serve Continental, Chinese and Indian cuisines. Not to mention many regional flavors and tastes. A feast for your taste buds!</p>
                     </div>
                     <div class="col-md-4">
@@ -252,7 +428,7 @@
                         <p class="content-4">The quietude of the place coupled with our discreet room service would leave you to yourself in toto. You can be as private as possible!</p>
                     </div>
                     <div class="col-md-4">
-                       <div class="icon-section-43">
+                        <div class="icon-section-43">
                             <img class="icon-1" src="./images/assets/ico3.png" alt="">
                             <img class="icon-1-hover" src="./images/assets/ico3-hover.png" alt="">
                             <h2 class="heading-4 py-3">IN THE BEST LOCALE</h2>
@@ -283,7 +459,7 @@
                             <img class="icon-1-hover" src="./images/assets/ico6-hover.png" alt="">
                             <h2 class="heading-4 py-3">JUST YOU AND HERITAGE</h2>
                         </div>
-                        <p class="content-4">We know your preparation before arriving at Misty Mount.  We take care and ensure nobody comes in between you and Nature!</p>
+                        <p class="content-4">We know your preparation before arriving at Misty Mount. We take care and ensure nobody comes in between you and Nature!</p>
                     </div>
                 </div>
 
@@ -303,19 +479,19 @@
                         <img src="./images/assets/arrow-title3.png" alt="">
                         <div class="mt-5 row amb-thumb">
                             <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                                    <img onclick="myFunction1()" class="amb-image" src="./images/am1.jpg" alt="">
+                                <img onclick="myFunction1()" class="amb-image" src="./images/am1.jpg" alt="">
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                                    <img onclick="myFunction2()" class="amb-image" src="./images/am3.jpg" alt="">
-                              </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                                    <img  onclick="myFunction3()" class="amb-image" src="./images/am4.jpg" alt=""> 
+                                <img onclick="myFunction2()" class="amb-image" src="./images/am3.jpg" alt="">
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-                                    <img onclick="myFunction4()" class="amb-image" src="./images/am5.jpg" alt="">
-                           </div>
+                                <img onclick="myFunction3()" class="amb-image" src="./images/am4.jpg" alt="">
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                                <img onclick="myFunction4()" class="amb-image" src="./images/am5.jpg" alt="">
+                            </div>
                         </div>
-                        
+
                     </div>
 
                 </div>
@@ -363,16 +539,20 @@
 
                             <div class="mx-5">
                                 <div class="card-detail1  mt-4 text-center">
-                                 <i class=" fa fa-bed mr-3" aria-hidden="true"></i>    <h5 class="d-inline-block">1 King Size Bed</h5>
+                                    <i class=" fa fa-bed mr-3" aria-hidden="true"></i>
+                                    <h5 class="d-inline-block">1 King Size Bed</h5>
                                 </div>
                                 <div class="card-detail1  mt-3 text-center">
-                                     <i class=" fa fa-users mr-3" aria-hidden="true"></i><h5 class="d-inline-block">2 People in a Room</h5>
+                                    <i class=" fa fa-users mr-3" aria-hidden="true"></i>
+                                    <h5 class="d-inline-block">2 People in a Room</h5>
                                 </div>
                                 <div class="card-detail1  mt-3 text-center">
-                                    <i class="fa fa-object-group mr-3" aria-hidden="true"></i> <h5 class="d-inline-block">550 sqf</h5>
+                                    <i class="fa fa-object-group mr-3" aria-hidden="true"></i>
+                                    <h5 class="d-inline-block">550 sqf</h5>
                                 </div>
-                                <div class="card-detail-x mt-3 text-center" >
-                                    <img style=" max-height:23px ; max-width: 33px; " class="mr-3" src="./images/air-conditioner.png" alt=""><h5 class="d-inline-block"> Split AC</h5>
+                                <div class="card-detail-x mt-3 text-center">
+                                    <img style=" max-height:23px ; max-width: 33px; " class="mr-3" src="./images/air-conditioner.png" alt="">
+                                    <h5 class="d-inline-block"> Split AC</h5>
                                 </div>
 
                                 <div class="mt-4 text-center">
@@ -398,16 +578,20 @@
 
                             <div class="mx-5">
                                 <div class="card-detail1  mt-4 text-center">
-                                    <i class=" fa fa-bed mr-3" aria-hidden="true"></i> <h5 class="d-inline-block">2 Beds</h5>
+                                    <i class=" fa fa-bed mr-3" aria-hidden="true"></i>
+                                    <h5 class="d-inline-block">2 Beds</h5>
                                 </div>
                                 <div class="card-detail1  mt-3 text-center">
-                                   <i class=" fa fa-users mr-3" aria-hidden="true"></i> <h5 class="d-inline-block">4 People in a Room</h5>
+                                    <i class=" fa fa-users mr-3" aria-hidden="true"></i>
+                                    <h5 class="d-inline-block">4 People in a Room</h5>
                                 </div>
                                 <div class="card-detail1  mt-3 text-center">
-                                   <i class="fa fa-object-group mr-3" aria-hidden="true"></i> <h5 class="d-inline-block">350 sqf</h5>
+                                    <i class="fa fa-object-group mr-3" aria-hidden="true"></i>
+                                    <h5 class="d-inline-block">350 sqf</h5>
                                 </div>
-                                <div class="card-detail-x mt-3 text-center" >
-                                     <img style=" max-height:23px ; max-width: 33px; " class="mr-3" src="./images/air-conditioner.png" alt=""> <h5 class="d-inline-block"> Split AC</h5>
+                                <div class="card-detail-x mt-3 text-center">
+                                    <img style=" max-height:23px ; max-width: 33px; " class="mr-3" src="./images/air-conditioner.png" alt="">
+                                    <h5 class="d-inline-block"> Split AC</h5>
                                 </div>
 
                                 <div class="mt-4 text-center">
@@ -433,17 +617,20 @@
 
                             <div class="mx-5">
                                 <div class="card-detail1  mt-4 text-center">
-                                   <i class=" fa fa-bed mr-3" aria-hidden="true"></i> <h5 class="d-inline-block">1 King Size Bed</h5>
+                                    <i class=" fa fa-bed mr-3" aria-hidden="true"></i>
+                                    <h5 class="d-inline-block">1 King Size Bed</h5>
                                 </div>
                                 <div class="card-detail1  mt-3 text-center">
-                                   <i class=" fa fa-users mr-3" aria-hidden="true"></i> <h5 class=" d-inline-block">2 People in a Room</h5>
+                                    <i class=" fa fa-users mr-3" aria-hidden="true"></i>
+                                    <h5 class=" d-inline-block">2 People in a Room</h5>
                                 </div>
                                 <div class="card-detail1  mt-3 text-center">
-                                    <i class="fa fa-object-group mr-3" aria-hidden="true"></i><h5 class="d-inline-block">310 sqf</h5>
+                                    <i class="fa fa-object-group mr-3" aria-hidden="true"></i>
+                                    <h5 class="d-inline-block">310 sqf</h5>
                                 </div>
-                                <div class="card-detail-x mt-3 text-center" >
-                                  <img style=" max-height:23px ; max-width: 33px; " class="mr-3" src="./images/air-conditioner.png" alt="">
- <h5 class=" d-inline-block"> Split AC</h5>
+                                <div class="card-detail-x mt-3 text-center">
+                                    <img style=" max-height:23px ; max-width: 33px; " class="mr-3" src="./images/air-conditioner.png" alt="">
+                                    <h5 class=" d-inline-block"> Split AC</h5>
                                 </div>
 
                                 <div class="mt-4 text-center">
@@ -458,399 +645,399 @@
                     </div>
                 </div>
             </div>
-        
-           <div class=" view-more text-center">
-               <a data-toggle="tooltip" title="View More" href="./room.html"  class="btn">
-                   <img src="./images/more.png" style="max-height: 75px;" alt="">
-               </a>
-           </div>
-            
-           
+
+            <div class=" view-more text-center">
+                <a data-toggle="tooltip" title="View More" href="./room.html" class="btn">
+                    <img src="./images/more.png" style="max-height: 75px;" alt="">
+                </a>
+            </div>
+
+
         </div>
-        </div>
-        
-        <!--price card-->
+    </div>
+
+    <!--price card-->
 
 
-        <!--        our price ends-->
+    <!--        our price ends-->
 
-        <!-- Portfolio -->
-        
-        <div >
-            <div class="container py-3">
-                <div class="portfolio pt-3 text-center" id="portfolio">
-                    <h3 class="card-heading1">OUR GALLERY</h3>
-                    <img style="margin-top: -1rem;"src="./images/assets/arrow-title3.png" alt="">
-                    <h2 class="section-sub-heading1 mb-4">Glance at our Great Resort</h2>
+    <!-- Portfolio -->
 
-                    <div class="tabs tabs-style-bar">
-                        <nav>
-                            <ul>
-                                <li><a href="#section-bar-1" class="icon icon-box"><span>ROOMS</span></a></li>
-                                <li><a href="#section-bar-2" class="icon icon-display"><span>EVENTS</span></a></li>
-                                <li><a href="#section-bar-3" class="icon icon-upload"><span>POOL</span></a></li>
-                                <li><a href="#section-bar-4" class="icon icon-tools"><span>Others</span></a></li>
-                            </ul>
-                        </nav>
+    <div>
+        <div class="container py-3">
+            <div class="portfolio pt-3 text-center" id="portfolio">
+                <h3 class="card-heading1">OUR GALLERY</h3>
+                <img style="margin-top: -1rem;" src="./images/assets/arrow-title3.png" alt="">
+                <h2 class="section-sub-heading1 mb-4">Glance at our Great Resort</h2>
 
-                        <div class="content-wrap">
+                <div class="tabs tabs-style-bar">
+                    <nav>
+                        <ul>
+                            <li><a href="#section-bar-1" class="icon icon-box"><span>ROOMS</span></a></li>
+                            <li><a href="#section-bar-2" class="icon icon-display"><span>EVENTS</span></a></li>
+                            <li><a href="#section-bar-3" class="icon icon-upload"><span>POOL</span></a></li>
+                            <li><a href="#section-bar-4" class="icon icon-tools"><span>Others</span></a></li>
+                        </ul>
+                    </nav>
 
-                            <!-- Tab-1 -->
-                            <section id="section-bar-1" class="agileits w3layouts">
-                                <h4>ROOMS</h4>
-                                <div class="gallery-grids row">
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/room/suite/img1.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/room/suite/img1.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Suite Room</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/room/suite/img2.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/room/suite/img2.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Suite Room</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/room/family-room/img1.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/room/family-room/img1.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Family Room</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/room/super-delux/img2.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/room/super-delux/img2.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Super Deluxe</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/room/super-delux/img3.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/room/super-delux/img3.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Super Deluxe</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/room/super-delux/img2.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/room/super-delux/img2.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Super Deluxe</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/room/delux/img3.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/room/delux/img3.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Deluxe</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/room/delux/img1.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/room/delux/img1.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Deluxe</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/room/suite/img5.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/room/suite/img5.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Suite Bathroom</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
+                    <div class="content-wrap">
 
+                        <!-- Tab-1 -->
+                        <section id="section-bar-1" class="agileits w3layouts">
+                            <h4>ROOMS</h4>
+                            <div class="gallery-grids row">
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/room/suite/img1.jpg" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/room/suite/img1.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Suite Room</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
                                 </div>
-                            </section>
-                            <!-- //Tab-1 -->
-
-                            <!-- Tab-2 -->
-                            <section id="section-bar-2" class="agileits w3layouts">
-                                <h4>EVENTS</h4>
-                                <div class="gallery-grids row">
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/events/e1.JPG" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/events/e1.JPG" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Marriage Function</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/events/e6.JPG" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/events/e6.JPG" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Marriage Function</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/events/e5.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/events/e5.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Marriage Function</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/events/e15.jpeg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/events/e15.jpeg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Marriage Function</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/events/e17.jpeg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/events/e17.jpeg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Event</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/events/e13.jpeg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/events/e13.jpeg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Banquet Hall</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                     <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/events/e21.jpeg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/events/e21.jpeg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Banquet Hall</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/events/e22.jpeg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/events/e22.jpeg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Banquet Hall</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    
-                                   
-                                    <div class="clearfix"></div>
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/room/suite/img2.jpg" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/room/suite/img2.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Suite Room</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
                                 </div>
-                            </section>
-                            <!-- //Tab-2 -->
-
-                            <!-- Tab-3 -->
-                            <section id="section-bar-3" class="agileits w3layouts">
-                                <h4>POOL</h4>
-                                <div class="gallery-grids row">
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/pool/p1.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/pool/p1.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Pool Area</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/pool/p2.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/pool/p2.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Pool Area</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/pool/p3.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/pool/p3.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Pool Area</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/pool/p4.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/pool/p4.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Pool Area</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/pool/e2.JPG" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/pool/e2.JPG" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Pool Party</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/pool/p5.jpeg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/pool/p5.jpeg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Pool</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    
-                                    <div class="clearfix"></div>
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/room/family-room/img1.jpg" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/room/family-room/img1.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Family Room</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
                                 </div>
-                            </section>
-                            <!-- //Tab-3 -->
-
-                            <!-- Tab-4 -->
-                            <section id="section-bar-4" class="agileits w3layouts">
-                                <h4>Others</h4>
-                                <div class="gallery-grids row">
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/restraunt/r1.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/restraunt/r1.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Restarant</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/restraunt/r2.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/restraunt/r2.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Restarant</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/hall/h1.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/hall/h1.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Banquet Hall</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/hall/h2.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/hall/h2.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Banquet Hall</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/interior/img5.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/interior/img5.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Common Area</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/interior/img1.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/interior/img1.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Common Area</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 gallery-top">
-                                        <a href="images/interior/img2.jpg" class="swipebox">
-                                            <figure class="effect-bubba">
-                                                <img src="images/interior/img2.jpg" alt="" class="img-responsive">
-                                                <figcaption>
-                                                    <h4>Reception</h4>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                   
-                                    <div class="clearfix"></div>
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/room/super-delux/img2.jpg" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/room/super-delux/img2.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Super Deluxe</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
                                 </div>
-                            </section>
-                            <!-- //Tab-4 -->
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/room/super-delux/img3.jpg" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/room/super-delux/img3.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Super Deluxe</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/room/super-delux/img2.jpg" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/room/super-delux/img2.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Super Deluxe</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/room/delux/img3.jpg" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/room/delux/img3.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Deluxe</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/room/delux/img1.jpg" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/room/delux/img1.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Deluxe</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/room/suite/img5.jpg" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/room/suite/img5.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Suite Bathroom</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
 
-                        </div><!-- //Content -->
-                    </div><!-- //Tabs -->
-                </div>
+                            </div>
+                        </section>
+                        <!-- //Tab-1 -->
+
+                        <!-- Tab-2 -->
+                        <section id="section-bar-2" class="agileits w3layouts">
+                            <h4>EVENTS</h4>
+                            <div class="gallery-grids row">
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/events/e1.JPG" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/events/e1.JPG" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Marriage Function</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/events/e6.JPG" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/events/e6.JPG" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Marriage Function</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/events/e5.jpg" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/events/e5.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Marriage Function</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/events/e15.jpeg" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/events/e15.jpeg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Marriage Function</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/events/e17.jpeg" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/events/e17.jpeg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Event</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/events/e13.jpeg" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/events/e13.jpeg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Banquet Hall</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/events/e21.jpeg" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/events/e21.jpeg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Banquet Hall</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/events/e22.jpeg" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/events/e22.jpeg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Banquet Hall</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+
+
+                                <div class="clearfix"></div>
+                            </div>
+                        </section>
+                        <!-- //Tab-2 -->
+
+                        <!-- Tab-3 -->
+                        <section id="section-bar-3" class="agileits w3layouts">
+                            <h4>POOL</h4>
+                            <div class="gallery-grids row">
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/pool/p1.jpg" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/pool/p1.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Pool Area</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/pool/p2.jpg" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/pool/p2.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Pool Area</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/pool/p3.jpg" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/pool/p3.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Pool Area</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/pool/p4.jpg" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/pool/p4.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Pool Area</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/pool/e2.JPG" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/pool/e2.JPG" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Pool Party</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/pool/p5.jpeg" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/pool/p5.jpeg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Pool</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+
+                                <div class="clearfix"></div>
+                            </div>
+                        </section>
+                        <!-- //Tab-3 -->
+
+                        <!-- Tab-4 -->
+                        <section id="section-bar-4" class="agileits w3layouts">
+                            <h4>Others</h4>
+                            <div class="gallery-grids row">
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/restraunt/r1.jpg" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/restraunt/r1.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Restarant</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/restraunt/r2.jpg" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/restraunt/r2.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Restarant</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/hall/h1.jpg" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/hall/h1.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Banquet Hall</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/hall/h2.jpg" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/hall/h2.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Banquet Hall</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/interior/img5.jpg" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/interior/img5.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Common Area</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/interior/img1.jpg" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/interior/img1.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Common Area</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 gallery-top">
+                                    <a href="images/interior/img2.jpg" class="swipebox">
+                                        <figure class="effect-bubba">
+                                            <img src="images/interior/img2.jpg" alt="" class="img-responsive">
+                                            <figcaption>
+                                                <h4>Reception</h4>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+
+                                <div class="clearfix"></div>
+                            </div>
+                        </section>
+                        <!-- //Tab-4 -->
+
+                    </div><!-- //Content -->
+                </div><!-- //Tabs -->
             </div>
         </div>
-        <!-- //Portfolio -->
+    </div>
+    <!-- //Portfolio -->
 
-        <!--   Map-->
+    <!--   Map-->
 
-       <iframe  class="w-100" style=" margin-bottom: -10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.992752049475!2d74.65899571501174!3d25.304447583846358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c141d7afc1dd%3A0x419961db0e2458c9!2sShrilok%20The%20Heritage%20Resort!5e0!3m2!1sen!2sin!4v1568138384932!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <iframe class="w-100" style=" margin-bottom: -10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.992752049475!2d74.65899571501174!3d25.304447583846358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c141d7afc1dd%3A0x419961db0e2458c9!2sShrilok%20The%20Heritage%20Resort!5e0!3m2!1sen!2sin!4v1568138384932!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
-        <!--  Map Ends-->
+    <!--  Map Ends-->
 
 
 
-     <!--Footer start  -->
+    <!--Footer start  -->
 
     <div class="footer px-5 pt-5" style="background-color: #F7F5F2">
 
@@ -870,15 +1057,15 @@
                     <i class="fa fa-phone mx-2" aria-hidden="true"></i>
                     9828381718
                 </div>
-                 <div class="lead my-3">
-                   For Enquiry / Booking
+                <div class="lead my-3">
+                    For Enquiry / Booking
                 </div>
                 <div class="divider w-100 mx-auto" style="height: 1px ; background-color: darkgray ; opacity: 0.7"></div>
                 <div class="my-3">
                     <i class="fa fa-phone mx-2" aria-hidden="true"></i>
                     9828381718
                 </div>
-                   <div class=" my-3">
+                <div class=" my-3">
                     <i class=" mx-2 fa fa-envelope"></i>
                     info.shrilok@gmail.com
                 </div>
@@ -890,22 +1077,22 @@
                 </div>
 -->
             </div>
-           
-             <div class="col-md-3">
+
+            <div class="col-md-3">
                 <div class="text-center">
                     <h4>Get In Touch</h4>
                     <img src="./images/assets/arrow-title.png" alt="">
                     <div class="lead my-3">
-                    <div class="row">
-                        <div class="col-2">
-                             <i class="fa fa-map-signs mx-2" aria-hidden="true"></i>
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="fa fa-map-signs mx-2" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10" style="text-align: left;">SHRILOK <br>The Heritage Resort <br>Near Harni Mahadev Temple,<br>Mangrop Road, <br> Bhilwara (311001)
+                            </div>
                         </div>
-                        <div class="col-10" style="text-align: left;">SHRILOK <br>The Heritage Resort <br>Near Harni Mahadev Temple,<br>Mangrop Road, <br> Bhilwara (311001) 
-                        </div>
+
+
                     </div>
-                   
-                   
-                </div>
                 </div>
             </div>
             <div class="col-md-3">
@@ -916,44 +1103,59 @@
                         The Shrilok Bhilwara, being a luxury resort perched on top class Heritage architecture in the heart of Mewar Region. This luxury resort in Bhilwara has become synonymous with royal hospitality, world class service and for its distinguished taste.
                     </p>
                     <div class="icon-div">
-                      <a href="https://www.facebook.com/shrilokheritageresort/"><img  style="max-height: 35px; max-width: 35px;" src="./images/fb.png" alt=""></a> 
-                       <a href="">
-                           <img  style="max-height: 35px; max-width: 35px;" src="./images/youtube.png" alt="">
-                       </a>
-                       <a href="https://g.page/shrilokheritageresort">
-                           <img  style="max-height: 35px; max-width: 35px;" src="./images/google.png" alt="">
-                       </a>
+                        <a href="https://www.facebook.com/shrilokheritageresort/"><img style="max-height: 35px; max-width: 35px;" src="./images/fb.png" alt=""></a>
+                        <a href="">
+                            <img style="max-height: 35px; max-width: 35px;" src="./images/youtube.png" alt="">
+                        </a>
+                        <a href="https://g.page/shrilokheritageresort">
+                            <img style="max-height: 35px; max-width: 35px;" src="./images/google.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
-            
-            <div class="col-md-3 insta-feed" >
-<!--
+
+            <div class="col-md-3 insta-feed">
+                <!--
                 <div class="text-center mb-2">
                     <h4>GET IN TOUCH </h4>
                     <img src="./images/assets/arrow-title.png" alt="">
                 </div>
 -->
-                <div class="lead text-center"> <h4 style="display: inline">Follow us on</h4> <a href="https://www.instagram.com/shrilokheritageresort/">
-                    <img src="./images/insta.png" style="max-height: 25px; max-width: 25px; " alt="">
-                </a> <h4  style="display: inline">@</h4></div> 
-                    <div class="my-3" style="z-index: 9;">
-                    <div class='embedsocial-instagram' data-ref="ca124796837f35c469b2d429155f832580ea1770"></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/in.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialInstagramScript"));</script>
+                <div class="lead text-center">
+                    <h4 style="display: inline">Follow us on</h4> <a href="https://www.instagram.com/shrilokheritageresort/">
+                        <img src="./images/insta.png" style="max-height: 25px; max-width: 25px; " alt="">
+                    </a>
+                    <h4 style="display: inline">@</h4>
+                </div>
+                <div class="my-3" style="z-index: 9;">
+                    <div class='embedsocial-instagram' data-ref="ca124796837f35c469b2d429155f832580ea1770"></div>
+                    <script>
+                        (function(d, s, id) {
+                            var js;
+                            if (d.getElementById(id)) {
+                                return;
+                            }
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = "https://embedsocial.com/embedscript/in.js";
+                            d.getElementsByTagName("head")[0].appendChild(js);
+                        }(document, "script", "EmbedSocialInstagramScript"));
+                    </script>
 
-                
+
+                </div>
             </div>
-        </div>
-        
-        
 
-    </div>
-    <div class="f-bottom text-center lead  py-3">
+
+
+        </div>
+        <div class="f-bottom text-center lead  py-3">
             © 2019 ALL RIGHTS RESERVED @ SHRILOK HERITAGE RESORT
         </div>
 
-    <!-- Footer Ends  -->
+        <!-- Footer Ends  -->
 
-
+    </div>
 
 
     <!--    Other Scripts-->
@@ -1043,8 +1245,11 @@
         });
     </script>
     <!-- //Swipe-Box-JavaScript -->
-    
- 
+
+
+
+
+
 
 
     <!-- Bootstrap core JavaScript -->
@@ -1052,6 +1257,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+ <script type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js">              </script>
+
+   
 
 </body>
 
