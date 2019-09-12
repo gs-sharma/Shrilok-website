@@ -1,36 +1,20 @@
-/*contact images*/
-/*
-.contact{
-    min-height: 250px;
+@media(max-width:992px){
+    .navbar{
+        background-color: azure !important;
+        color: black;
+        margin-top: 25px;
+    }
 }
-.img-1{
- background-image: url(../images/contact/img1.png);
-    min-height: 240px;
-    background-position: center;
-    background-size: contain;
-}
-.img-2{
- background-image: url(../images/contact/img2.png);
-    min-height: 240px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    
-}
-.img-3{
- background-image: url(../images/contact/img3.png);
-    min-height: 240px;
-    background-position: center;
-    background-size: contain;
-}
-.img-4{
- background-image: url(../images/contact/img4.png);
-    min-height: 240px;
-    background-position: center;
-    background-size: contain;
-}
-*/
 
+@media(max-width:630px){
+    .contact{
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    padding-top: 4rem !important;
+}
+}
+
+/*contact images*/
 .img-1{
   
     background-image: url(../images/contact/img1.png);
