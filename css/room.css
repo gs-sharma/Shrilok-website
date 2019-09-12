@@ -165,7 +165,7 @@
     position: relative;
 /*    background: url(../images/assets/snow-hills.png);*/
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     background-position: center;
     background-size: cover;
 }
@@ -344,13 +344,18 @@
 }
 
 .testimonial .carousel {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+.carousel-control-prev .carousel-control-next{
+    color: black;
 }
 
 .testimonial .carousel-control-next-icon,
 .testimonial .carousel-control-prev-icon {
     width: 35px;
     height: 35px;
+    color: black;
 }
 
 
