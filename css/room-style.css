@@ -6,6 +6,18 @@
     }
 }
 
+@media(max-width:486px){
+    .banner-heading h{
+        font-size: 35px !important;
+    }
+}
+
+@media(max-width:327px){
+    .banner-heading h{
+        font-size: 26px !important;
+    }
+}
+
 .insta-feed{
     max-height:345px; 
     overflow-y: scroll;

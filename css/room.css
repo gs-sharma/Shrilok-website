@@ -12,7 +12,7 @@
     }
 }
 
-@media(max-width:486px){
+@media(max-width:327px){
     .banner-heading h{
         font-size: 26px !important;
     }
