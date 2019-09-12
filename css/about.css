@@ -4,7 +4,38 @@
         color: black;
         margin-top: 25px;
     }
+    
+    .row{
+        margin-left: 0px !important;
+         margin-right: 0px !important;
+    }
 }
+
+@media(max-width:600px){
+    .about-r-img 
+    {
+    min-height: 400px !important;
+    }
+}
+
+@media(max-width:450px){
+    .about-r-img 
+    {
+    min-height: 180px !important;
+    }
+    
+    .about-r-img-2 
+    {
+    min-height: 258px !important;
+    }
+    
+     .about-r-img-3 
+    {
+    min-height: 261px !important;
+    }
+}
+
+
 
 .insta-feed{
     max-height:345px; 
@@ -66,11 +97,33 @@
 
 /*section-2 starts*/
 .about-r-img {
- background-image: url(../images/exterior/ext13.jpeg);
-    overflow-x: hidden;
-    background-size: cover;
-    padding-left: 0px;
-    padding-right: 0px;
+    background-image: url(../images/exterior/ext13.jpeg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    
+
+}
+
+.about-r-img-2 {
+    background-image: url(../images/about/about-img.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    
+
+}
+
+.about-r-img-3 {
+    background-image: url(../images/about/about-img2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    
+
 }
 .section2 h2{
     font-family: 'Roboto', sans-serif;
