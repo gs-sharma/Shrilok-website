@@ -1,8 +1,81 @@
+/*contact images*/
+/*
+.contact{
+    min-height: 250px;
+}
+.img-1{
+ background-image: url(../images/contact/img1.png);
+    min-height: 240px;
+    background-position: center;
+    background-size: contain;
+}
+.img-2{
+ background-image: url(../images/contact/img2.png);
+    min-height: 240px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.img-3{
+ background-image: url(../images/contact/img3.png);
+    min-height: 240px;
+    background-position: center;
+    background-size: contain;
+}
+.img-4{
+ background-image: url(../images/contact/img4.png);
+    min-height: 240px;
+    background-position: center;
+    background-size: contain;
+}
+*/
+
+.img-1{
+  
+    background-image: url(../images/contact/img1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.img-2{
+  
+    background-image: url(../images/contact/img2.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-3{
+  
+    background-image: url(../images/contact/img3.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-4{
+  
+    background-image: url(../images/contact/img4.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.img-inner{
+    
+   min-height: 240px;
+}
+
+
+
+
+/*insta feed*/
 .insta-feed{
     max-height:345px; 
     overflow-y: scroll;
 }
-
 /*Banner Ends*/
 .top-banner {
     background-image: url(../images/banner.jpg);
