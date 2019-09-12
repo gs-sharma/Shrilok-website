@@ -1,3 +1,11 @@
+@media(max-width:992px){
+    .navbar{
+        background-color: azure !important;
+        color: black;
+        margin-top: 25px;
+    }
+}
+
 .insta-feed{
     max-height:345px; 
     overflow-y: scroll;
