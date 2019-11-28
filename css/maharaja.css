@@ -1,5 +1,5 @@
 @media(max-width:992px){
-    .navbar{
+    .navbar1{
         background-color: azure !important;
         color: black;
         margin-top: 25px;
@@ -14,12 +14,12 @@
    
 }
 
-.overlay {
+.overlay1 {
     height: 472px;
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.logo-image {
+.logo-image1 {
     height: 125px;
 }
 
@@ -36,7 +36,7 @@
 /*Banner ends*/
 
 /*Navbar*/
-.navbar {
+.navbar1 {
     background-color: transparent;
 }
 
