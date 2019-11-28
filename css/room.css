@@ -1,25 +1,35 @@
-@media(max-width:992px){
-    .navbar{
+@media(max-width:992px) {
+    .navbar {
         background-color: azure !important;
         color: black;
         margin-top: 25px;
     }
+    
+    .footer-none{
+        display: block;
+    }
 }
 
-@media(max-width:486px){
-    .banner-heading h{
+@media(max-width:486px) {
+    .banner-heading h {
         font-size: 35px !important;
     }
 }
 
-@media(max-width:327px){
-    .banner-heading h{
+@media(min-width:320px) {
+    .footer-none {
+        display: none;
+    }
+}
+
+@media(max-width:327px) {
+    .banner-heading h {
         font-size: 26px !important;
     }
 }
 
-.insta-feed{
-    max-height:345px; 
+.insta-feed {
+    max-height: 345px;
     overflow-y: scroll;
 }
 
@@ -39,11 +49,13 @@
 .logo-image {
     height: 125px;
 }
+
 .banner-heading {
     margin-top: 8rem;
 
 }
-.banner-heading h{
+
+.banner-heading h {
     font-family: 'Cinzel Decorative', cursive;
     font-size: 50px;
 }
@@ -183,7 +195,7 @@
 .testimonial {
     min-height: 375px;
     position: relative;
-/*    background: url(../images/assets/snow-hills.png);*/
+    /*    background: url(../images/assets/snow-hills.png);*/
     padding-top: 50px;
     padding-bottom: 20px;
     background-position: center;
@@ -367,7 +379,7 @@
     padding-bottom: 20px;
 }
 
-.carousel-control-prev .carousel-control-next{
+.carousel-control-prev .carousel-control-next {
     color: black;
 }
 
@@ -399,5 +411,3 @@
 .icon {
     font-size: 35px;
 }
-
-
