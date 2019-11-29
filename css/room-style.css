@@ -1,3 +1,216 @@
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .room-features-area h6 {
+        font-size: 2rem;
+    }
+    .para-1{
+        font-size: 50px;
+        text-align: justify;
+    }
+    
+    .para-2{
+      display: none;
+       
+    }
+    
+    .para-3{
+        display: none;
+        
+    }
+    
+    .para-4{
+       display: none;
+    }
+    
+    .para-5{
+        font-size: 50px;
+        line-height: 1.7;
+  color: #636a76;
+  font-weight: 400;
+    }
+    
+    .side-form{
+        font-size: 50px;
+    }
+    
+    .hotel-reservation--area h4{
+        font-size: 50px;
+    }
+    
+    .form-group .pure-group label {
+        font-size: 50px;
+    }
+    
+    .form-group .pure-group input {
+        font-size: 30px;
+        height: 100px;
+    }
+    
+    .btn i {
+        color: white;
+        font-size: 40px;
+    }
+    
+    .btn p {
+        color: white;
+        font-size: 45px;
+    }
+    
+    .send-btn {
+        height: 83px !important;
+    }
+    
+    .view-detail-btn {
+        font-size: 25px !important;
+    }
+    
+    .reviwer-title h6{
+        font-size: 35px;
+    }
+    
+    .room-review-area h4{
+        font-size: 35px;
+    }
+    
+    .room-review-area p{
+        font-size: 30px;
+    }
+    
+    .cta-text h2{
+        font-size: 40px !important;
+    }
+    
+    .cta-text p{
+        font-size: 20px !important;
+    }
+    
+    .contact-btn p{
+        font-size: 22px;
+        color: white !important;
+    }
+    
+    .footer-3{
+        display: none;
+    }
+}
+@media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
+   
+    .room-features-area h6 {
+        font-size: 1.5rem;
+    }
+    
+    .para-1{
+        font-size: 30px ;
+        text-align: justify ;
+    }
+    
+    .para-2{
+      display: block;
+        font-size: 30px
+    }
+    
+  
+    .para-3{
+        display:block;
+        font-size: 30px;
+        
+    }
+    
+    .para-4{
+       display: none !important;
+    }
+    
+    .para-5{
+        font-size: 30px;
+        line-height: 1.7;
+  color: #636a76;
+  font-weight: 400;
+    }
+    
+    .side-form{
+        font-size: 30px;
+    }
+    
+    .hotel-reservation--area h4{
+        font-size: 30px;
+    }
+    
+    .form-group .pure-group label {
+        font-size: 30px;
+    }
+    
+    .form-group .pure-group input {
+        font-size: 25px;
+        height: 80px;
+    }
+    
+    .btn i {
+        color: white;
+        font-size: 40px;
+    }
+    
+    .btn p {
+        color: white;
+        font-size: 45px;
+    }
+    
+    .send-btn {
+        height: 83px !important;
+    }
+    
+    .view-detail-btn {
+        font-size: 25px !important;
+    }
+    
+    .reviwer-title h6{
+        font-size: 25px;
+    }
+    
+    .room-review-area h4{
+        font-size: 35px;
+    }
+    
+    .room-review-area p{
+        font-size: 25px;
+    }
+    
+    .cta-text h2{
+        font-size: 40px !important;
+    }
+    
+    .cta-text p{
+        font-size: 20px !important;
+    }
+    
+    .contact-btn p{
+        font-size: 22px;
+        color: white !important;
+    }
+}
+
+@media(min-width:768px){
+    .para-5{
+        display: none;
+    }
+    
+        .contact-btn p{
+        font-size: 22px;
+        color: white !important;
+    }
+    
+    .btn p {
+        color: white;
+        
+    }
+
+}
+
+
+@media(min-width:320px){
+     .footer-none {
+        display: none;
+    }
+}
+
 @media(max-width:992px){
     .navbar{
         background-color: azure !important;
@@ -16,12 +229,56 @@
     .banner-heading h{
         font-size: 26px !important;
     }
+    
+    
 }
 
-.insta-feed{
-    max-height:345px; 
+/*footer*/
+.footer-content {
+
+    font-family: 'Open Sans', sans-serif;
+    color: #959493;
+    font-size: 18px;
+
+}
+.insta-feed {
+    max-height: 345px;
     overflow-y: scroll;
 }
+.footer-content strong {
+    color: #626570;
+}
+
+.footer-links {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+.footer-nav-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-nav-link:hover {
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+
+.icon-div {
+    color: #A3A2A1;
+}
+
+.icon {
+    font-size: 35px;
+}
+
+/* // footer */
+
+
 
 .carousel-image{
     

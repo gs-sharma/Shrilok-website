@@ -10,7 +10,7 @@
     <!-- Favicon -->
     <link rel="icon" href="./img/core-img/favicon.png">
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./css/room-style.css">
@@ -40,7 +40,7 @@
             <!--            Navbar-->
             <div class="container ">
                 <nav class="navbar navbar1 navbar-light navbar-expand-lg text-center">
-                    <a class="navbar-brand " href="#"></a>
+                    <a class="d-lg-none d-md-block navbar-brand " href="#">Menu</a>
                     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -51,7 +51,7 @@
                                 <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./room.html">Accomodation</a>
+                                <a class="nav-link active" href="./room.html">Accomodation</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./about.html">About Us</a>
@@ -168,26 +168,28 @@
                             <h6>Price:<span>₹6999 / Night</span></h6>
                         </div>
 
-                         <p>Shrilok Heritage resort is based on a marvelous concept of blending contemporary architecture with traditionalism having an essence of the Royal Palace being located in the center of the city with beautiful flora and dense trees inboard with refreshing and glorious landscapes which are visually enchanting along with chirping of birds giving natural wake up call in the morning makes us feel heavenly and majestic making this resort more happening and relaxing place</p>
+                         <p class="para-1">Shrilok Heritage resort is based on a marvelous concept of blending contemporary architecture with traditionalism having an essence of the Royal Palace being located in the center of the city with beautiful flora and dense trees inboard with refreshing and glorious landscapes which are visually enchanting along with chirping of birds giving natural wake up call in the morning makes us feel heavenly and majestic making this resort more happening and relaxing place</p>
 
-                        <ul class="pl-5">
+                        <ul class=" para-2 pl-5">
                             <li><i class=" fa fa-users mr-3" aria-hidden="true"></i> Can Accomodate 2 guests at a time</li>
                             <li><i class="fa fa-object-group mr-3" aria-hidden="true"></i>550 sqf Area</li>
-                            <li> <img style=" max-height:23px ; max-width: 33px; " class="mr-3" src="./images/air-conditioner.png" alt=""><h5 class="d-inline-block"> Split AC </li>
+                            <li><i class="fas fa-stroopwafel mr-3"></i>  Split AC   </li>
 <!--
-                            <li><i class="fa fa-university" aria-hidden="true"></i> Heritage Look</li>
+                            <li>
+                            <img style=" max-height:23px ; max-width: 33px; " class="mr-3" src="./images/air-conditioner.png" alt=""><h5 class="d-inline-block"> Split AC </h5>
+                            <i class="fa fa-university" aria-hidden="true"></i> Heritage Look</li>
                             <li><i class="fa fa-trophy" aria-hidden="true"></i> Largest pillar-less banquet hall in the city </li>
 -->
                             
                         </ul>
 
-                        <p>This Rooms of Shrilok is a one of a kind , created to fascinate your imagination and satiate your culinary desires. From its magnitude to the aura of grandeur and the rare experience it provides, it is truly a class apart.
+                        <p class="para-3">This Rooms of Shrilok is a one of a kind , created to fascinate your imagination and satiate your culinary desires. From its magnitude to the aura of grandeur and the rare experience it provides, it is truly a class apart.
                         <br> <br>
                         Born of a unique vision to blend ancient royalty with modern class, today Shrilok stands as an exemplary monument of innovation. With a baffling landscape exclusively used to create this experience</p>
                     </div>
 
                     <!-- Room Service -->
-                    <div class="room-service mb-50">
+                    <div class="para-4 room-service mb-50">
                         <h4>Room Services</h4>
 
                         <ul>
@@ -199,16 +201,29 @@
                             <li> Service 24/7</li>
                         </ul>
                     </div>
+                    
+                    
+<div class="para-5  mb-50">
+                        <p class="para-5"><strong>Room Services</strong></p>
 
+                        <ul class="pl-5 ">
+                            <li><i class="mr-5 fa fa-arrow-right" aria-hidden="true"></i> Air Conditioning</li>
+                            <li> <i class="mr-5 fa fa-arrow-right" aria-hidden="true"></i>Free drinks</li>
+                            <li> <i class="mr-5 fa fa-arrow-right" aria-hidden="true"></i>Restaurant quality</li>
+                            <li> <i class="mr-5 fa fa-arrow-right" aria-hidden="true"></i>Cable TV</li>
+                            <li> <i class="mr-5 fa fa-arrow-right" aria-hidden="true"></i>Unlimited Wifi</li>
+                            <li> <i class="mr-5 fa fa-arrow-right" aria-hidden="true"></i>Service 24/7</li>
+                        </ul>
+                    </div>
 
                 </div>
 
-                <div class="col-12 col-lg-4">
+                <div class=" col-12 col-lg-4">
                     <!-- Hotel Reservation Area -->
                     <div class="hotel-reservation--area mb-100 mb-5">
                         <h4 class="px-1 mb-5">Want to book this room ? <br> Fill this Form and we will get back to you as soon as possible. </h4>
                    
-                    <form class="text-left gform pure-form pure-form-stacked" method="POST" data-email="Maharaja Suite" action="https://script.google.com/macros/s/AKfycbxMXEEhUOZiPZPXqMtyoPPc842tycnDhSAkzYo0/exec">
+                    <form class=" text-left gform pure-form pure-form-stacked" method="POST" data-email="Maharaja Suite" action="https://script.google.com/macros/s/AKfycbxMXEEhUOZiPZPXqMtyoPPc842tycnDhSAkzYo0/exec">
                                                                 <!-- change the form action to your script url -->
 
                                                                 <div class="form-group form-elements">
@@ -261,8 +276,8 @@
                                                                         <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
                                                                         <input id="honeypot" type="text" name="honeypot" value="" />
                                                                     </fieldset>
-                                                                    <button class=" mt-3 btn roberto-btn w-100">
-                                                                        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+                                                                    <button class="send-btn mt-3 btn roberto-btn w-100">
+                                                                        <i class="fa fa-paper-plane"></i>&nbsp;<p class="d-inline ml-3">Send</p></button>
 
 
                                                                 </div>
@@ -419,11 +434,13 @@
                     <div class="col-12 col-md-7">
                         <div class="cta-text mb-50">
                             <h2>Contact us now!</h2>
-                            <h6>Contact (+91) 9828381718 to book directly or for advice</h6>
+                            <p style="color: white;">Contact 01482 297425 / (+91)89491 91352 to book directly or for advice</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-5 text-right">
-                        <a href="./contact.html" class="btn roberto-btn mb-50">Contact Now</a>
+                        <a href="./contact.html" class="contact-btn btn roberto-btn mb-50">
+                        <p>Contact Now</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -435,11 +452,9 @@
 
    <!--Footer start  -->
 
-    <div class="footer px-5 pt-5" style="background-color: #F7F5F2">
-
-        <div class="mx-5 row pb-4 " style="border-bottom: 1px solid #A3A2A1;">
-            <div class="col-lg-3 col-sm-4 col-md-3" style="overflow: hidden;">
-
+   <div class="footer pt-5" style="background-color: #F7F5F2">
+       <div class="mx-3 pb-4 row" style="border-bottom: 1px solid #A3A2A1;">
+           <div class="col-lg-3 col-md-3 col-sm4" style="overflow: hidden;">
                 <div class="text-center mb-2">
                     <h4>CONTACT</h4>
                     <img src="./images/assets/arrow-title.png" alt="">
@@ -451,7 +466,7 @@
                 <div class="divider w-100 mx-auto" style="height: 1px ; background-color: darkgray ; opacity: 0.7"></div>
                 <div class="my-3">
                     <i class="fa fa-phone mx-2" aria-hidden="true"></i>
-                   <p class="d-inline-block"> 9828381718</p>
+                   <p class="d-inline-block"> 089491 91352</p>
                 </div>
                 <div class="lead my-3">
                     <p class="d-inline-block">For Enquiry / Booking</p>
@@ -459,7 +474,7 @@
                 <div class="divider w-100 mx-auto" style="height: 1px ; background-color: darkgray ; opacity: 0.7"></div>
                 <div class="my-3">
                     <i class="fa fa-phone mx-2" aria-hidden="true"></i>
-                    <p class="d-inline-block">9828381718</p>
+                    <p class="d-inline-block">01482 297425</p>
                 </div>
                 <div class=" my-3">
                     <i class=" mx-2 fa fa-envelope"></i>
@@ -471,12 +486,11 @@
                     <a href="" class="btn btn-dark">
                         BOOK NOW
                     </a>
-                </div>
--->
-            </div>
-
-            <div class="col-lg-3 col-sm-4 col-md-3">
-                <div class="text-center">
+                </div> 
+                -->
+           </div>
+           <div class="col-lg-3 col-md-3 col-sm4">
+               <div class="text-center">
                     <h4>Get In Touch</h4>
                     <img src="./images/assets/arrow-title.png" alt="">
                     <div class="lead my-3">
@@ -491,8 +505,8 @@
 
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-3 d-sm-none  d-md-block d-lg-block d-xl-block">
+           </div>
+           <div class="col-lg-3 col-md-3 col-sm-none">
                 <div class="text-center">
                     <h4>Shri Lok <br> The Heritage Resort</h4>
                     <img src="./images/assets/arrow-title.png" alt="">
@@ -509,16 +523,10 @@
                         </a>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-lg-3 col-sm-4 col-md-3 insta-feed">
-                <!--
-                <div class="text-center mb-2">
-                    <h4>GET IN TOUCH </h4>
-                    <img src="./images/assets/arrow-title.png" alt="">
-                </div>
--->
-                <div class="lead text-center">
+           </div>
+           <div class="col-lg-3 col-md-3 col-sm4 insta-feed">
+               
+               <div class="lead text-center">
                     <h4 style="display: inline">Follow us on</h4> <a href="https://www.instagram.com/shrilokheritageresort/">
                         <img src="./images/insta.png" style="max-height: 25px; max-width: 25px; " alt="">
                     </a>
@@ -541,24 +549,20 @@
 
 
                 </div>
-            </div>
-
-
-
-        </div>
-        <div class="f-bottom text-center lead  py-3">
+           </div>
+       </div>
+       <div class="f-bottom text-center lead  py-3">
             © 2019 ALL RIGHTS RESERVED @ SHRILOK HERITAGE RESORT
         </div>
-    </div>
-
+   </div>
     <!-- Footer Ends  -->
 
 
 
     <!-- Bootstrap core JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     
     <script data-cfasync="false" type="text/javascript"
 src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
